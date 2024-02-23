@@ -1,0 +1,11 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹ã´¤
+x
+java:S4165"bRemove this useless assignment; "Liga" already holds the assigned value along all execution paths.(Œží€
+i	java:S116"ORename this field "Liga" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þàìãûÿÿÿÿ
+C
+java:S1659"(Declare "expontente" on a separate line.(äµ‚Ôüÿÿÿÿ
+E
+java:S1656"/Remove or correct this useless self-assignment.(Œží€
+?
+java:S1068")Remove this unused "punta" private field.(™ñ´Ý

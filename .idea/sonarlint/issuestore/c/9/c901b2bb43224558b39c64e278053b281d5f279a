@@ -1,34 +1,3 @@
 
-Q
-java:S1066]"/Merge this if statement with the enclosing one.(ÊÔÂïşÿÿÿÿ8ïúä¸Ü1
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïšÄ8ğúä¸Ü1
-9
-java:S1643+"Use a StringBuilder instead.(îˆşí8ñúä¸Ü1
-9
-java:S16430"Use a StringBuilder instead.(îˆşí8ñúä¸Ü1
->
-java:S16437"Use a StringBuilder instead.(üš”øÿÿÿÿ8ñúä¸Ü1
->
-java:S1643<"Use a StringBuilder instead.(üš”øÿÿÿÿ8ñúä¸Ü1
-Y
-java:S4973C"<Strings and Boxed types should be compared using "equals()".(¹Ç‹­8ôúä¸Ü1
-^
-java:S4973]"<Strings and Boxed types should be compared using "equals()".(ÊÔÂïşÿÿÿÿ8ôúä¸Ü1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹‡¼úûÿÿÿÿ8öúä¸Ü1
-L
-java:S1197
-"*Move the array designators [] to the type.(¶ìıõûÿÿÿÿ8ÿä¸Ü1
-o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(ßáŠø8ˆÿä¸Ü1
-]	java:S125"<This block of commented-out lines of code should be removed.(æÃ¼Äÿÿÿÿÿ8“ÿä¸Ü1
-L
-java:S1197""*Move the array designators [] to the type.(êñ‘ûÿÿÿÿ8”ÿä¸Ü1
-L
-java:S1197#"*Move the array designators [] to the type.(³¢²úÿÿÿÿ8•ÿä¸Ü1
-C
-java:S1110]"!Remove these useless parentheses.(ÊÔÂïşÿÿÿÿ8›ÿä¸Ü1
-L	java:S106j"+Replace this use of System.out by a logger.(§œÌòùÿÿÿÿ8œÿä¸Ü1
-L
-java:S1197q"*Move the array designators [] to the type.(Şç±œûÿÿÿÿ8ÿä¸Ü1
-â
-java:S6541"ÄA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 75 to 64, Complexity from 19 to 14, Nesting Level from 3 to 2, Number of Variables from 8 to 6.(ßáŠø8¡ÿä¸Ü1
+7
+java:S1220""Move this file to a named package.8˜“ş®İ1
