@@ -1,30 +1,29 @@
 package Polinomio;
 
 
+import Polinomio.Forma1.Forma1;
+import Polinomio.Forma3.Nodo;
+
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-
 public class Main {
-    public static void main(String[] args) {
-        String vectorS[] = crear();
-        int grado = grado(vectorS);
 
-        Forma1 Poli = new Forma1(grado + 1);
-        Poli.ingresar(vectorS);
+        public static void main(String[] args) {
+            String vectorS[] = crear();
+            int grado = grado(vectorS);
+
+            Forma1 Poli = new Forma1(grado + 1);
+            Poli.ingresar(vectorS);
 
 
-
-
-    }
-    public static String [] crear() {
+        }
+    public static String [] crear(){
         Logger logger = Logger.getLogger(Main.class.getName());
         Scanner scanner = new Scanner(System.in);
 
-
         logger.info("Ingrese el polinomio: ");
         String polinomio = scanner.nextLine();
-
         //"15x^2+8x^3-3-2x";
 
         String data = "";
@@ -101,14 +100,10 @@ public class Main {
             i++;
 
         }
-        for (i = 0; i < vectorB.length; i++) {
-            if (vectorB[i] != null)
-                System.out.println(vectorB[i]);
-        }
-
 
         return (vectorB);
     }
+
 
     public static int grado (String vector[])
     {
@@ -120,7 +115,7 @@ public class Main {
             }
         }
         return grado;
-    }
-
-
+        }
 }
+
+
