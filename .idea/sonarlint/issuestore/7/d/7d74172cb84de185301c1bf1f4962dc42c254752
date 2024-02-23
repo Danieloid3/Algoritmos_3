@@ -1,56 +1,60 @@
 
 R
-java:S1066¦"/Merge this if statement with the enclosing one.(Í–ù³ıÿÿÿÿ8‰‹Å¯İ1
+java:S1066¬"/Merge this if statement with the enclosing one.(Í–ù³ıÿÿÿÿ8ğµß°İ1
 R
-java:S1066¯"/Merge this if statement with the enclosing one.(ÊÔÂïşÿÿÿÿ8Š‹Å¯İ1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â•Ôòùÿÿÿÿ8Š‹Å¯İ1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Ãû«üÿÿÿÿ8Š‹Å¯İ1
-9
-java:S1643|"Use a StringBuilder instead.(îˆşí8‹‹Å¯İ1
+java:S1066µ"/Merge this if statement with the enclosing one.(ÊÔÂïşÿÿÿÿ8ğµß°İ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â•Ôòùÿÿÿÿ8ğµß°İ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Ãû«üÿÿÿÿ8ğµß°İ1
 :
-java:S1643"Use a StringBuilder instead.(îˆşí8‹‹Å¯İ1
+java:S1643‚"Use a StringBuilder instead.(îˆşí8ğµß°İ1
+:
+java:S1643‡"Use a StringBuilder instead.(îˆşí8ğµß°İ1
 ?
-java:S1643ˆ"Use a StringBuilder instead.(üš”øÿÿÿÿ8‹‹Å¯İ1
+java:S1643"Use a StringBuilder instead.(üš”øÿÿÿÿ8ğµß°İ1
 ?
-java:S1643"Use a StringBuilder instead.(üš”øÿÿÿÿ8‹‹Å¯İ1
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ãÄîä8‹‹Å¯İ1
+java:S1643“"Use a StringBuilder instead.(üš”øÿÿÿÿ8ğµß°İ1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ãÄîä8÷µß°İ1
 Z
-java:S4973”"<Strings and Boxed types should be compared using "equals()".(¹Ç‹­8‹Å¯İ1
+java:S4973š"<Strings and Boxed types should be compared using "equals()".(¹Ç‹­8ùµß°İ1
 _
-java:S4973¦"<Strings and Boxed types should be compared using "equals()".(Í–ù³ıÿÿÿÿ8‹Å¯İ1
+java:S4973¬"<Strings and Boxed types should be compared using "equals()".(Í–ù³ıÿÿÿÿ8ùµß°İ1
 _
-java:S4973¯"<Strings and Boxed types should be compared using "equals()".(ÊÔÂïşÿÿÿÿ8‹Å¯İ1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹‡¼úûÿÿÿÿ8‹Å¯İ1
+java:S4973µ"<Strings and Boxed types should be compared using "equals()".(ÊÔÂïşÿÿÿÿ8ùµß°İ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹‡¼úûÿÿÿÿ8ûµß°İ1
 G
-java:S1197"*Move the array designators [] to the type.(ÕŸËï8½Å¯İ1
-G	java:S106"+Replace this use of System.out by a logger.(Æ™¬8¿Å¯İ1
-L	java:S106"+Replace this use of System.out by a logger.(§ˆ®¾ÿÿÿÿÿ8¿Å¯İ1
-L	java:S106"+Replace this use of System.out by a logger.(Ç„¸ùÿÿÿÿ8¿Å¯İ1
-L	java:S106"+Replace this use of System.out by a logger.(ïÄîèùÿÿÿÿ8¿Å¯İ1
-L	java:S106"+Replace this use of System.out by a logger.(¹ıÜıùÿÿÿÿ8¿Å¯İ1
-G	java:S106"+Replace this use of System.out by a logger.(œ‚´ã8¿Å¯İ1
-L	java:S106 "+Replace this use of System.out by a logger.(äõ¿éşÿÿÿÿ8¿Å¯İ1
-L	java:S106!"+Replace this use of System.out by a logger.(Ê¿øÿÿÿÿ8ÀÅ¯İ1
-L	java:S106""+Replace this use of System.out by a logger.(ÚõÙÿÿÿÿÿ8ÀÅ¯İ1
-L	java:S106#"+Replace this use of System.out by a logger.(ëß“¿ıÿÿÿÿ8ÀÅ¯İ1
-F	java:S106$"+Replace this use of System.out by a logger.(¨•·v8ÀÅ¯İ1
+java:S1197"*Move the array designators [] to the type.(ÕŸËï8¶»ß°İ1
+G	java:S106"+Replace this use of System.out by a logger.(Æ™¬8¸»ß°İ1
+L	java:S106"+Replace this use of System.out by a logger.(§ˆ®¾ÿÿÿÿÿ8¸»ß°İ1
+L	java:S106"+Replace this use of System.out by a logger.(Ç„¸ùÿÿÿÿ8¸»ß°İ1
+L	java:S106"+Replace this use of System.out by a logger.(ïÄîèùÿÿÿÿ8¹»ß°İ1
+L	java:S106"+Replace this use of System.out by a logger.(¹ıÜıùÿÿÿÿ8º»ß°İ1
+G	java:S106"+Replace this use of System.out by a logger.(œ‚´ã8º»ß°İ1
+L	java:S106 "+Replace this use of System.out by a logger.(äõ¿éşÿÿÿÿ8»»ß°İ1
+L	java:S106!"+Replace this use of System.out by a logger.(ø€îøÿÿÿÿ8»»ß°İ1
+G	java:S106""+Replace this use of System.out by a logger.(Ìß”Ó8¼»ß°İ1
+L	java:S106#"+Replace this use of System.out by a logger.(ëß“¿ıÿÿÿÿ8½»ß°İ1
+F	java:S106$"+Replace this use of System.out by a logger.(¨•·v8¾»ß°İ1
 L
-java:S11971"*Move the array designators [] to the type.(ÔÛ»ªüÿÿÿÿ8ÃÅ¯İ1
-G	java:S1067"+Replace this use of System.out by a logger.(†êó8ÄÅ¯İ1
+java:S11971"*Move the array designators [] to the type.(ÔÛ»ªüÿÿÿÿ8À»ß°İ1
+G	java:S1067"+Replace this use of System.out by a logger.(†êó8Â»ß°İ1
 O
-java:S61267"2Replace this String concatenation with Text block.(†êó8ÄÅ¯İ1
-L	java:S106:"+Replace this use of System.out by a logger.(ÿ—¯œıÿÿÿÿ8ÅÅ¯İ1
-]	java:S125>"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8ÇÅ¯İ1
+java:S61267"2Replace this String concatenation with Text block.(†êó8Â»ß°İ1
+L	java:S106:"+Replace this use of System.out by a logger.(ÿ—¯œıÿÿÿÿ8Ã»ß°İ1
+]	java:S125>"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8Ä»ß°İ1
+G	java:S106O"+Replace this use of System.out by a logger.(­È‘ì8Í»ß°İ1
+O
+java:S6126O"2Replace this String concatenation with Text block.(­È‘ì8Í»ß°İ1
+L	java:S106R"+Replace this use of System.out by a logger.(™âëÕøÿÿÿÿ8Í»ß°İ1
 L
-java:S1197\"*Move the array designators [] to the type.(Şç±œûÿÿÿÿ8ÈÅ¯İ1
+java:S1197b"*Move the array designators [] to the type.(Şç±œûÿÿÿÿ8Ğ»ß°İ1
 o
-java:S3776g"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(ßáŠø8ÉÅ¯İ1
-]	java:S125m"<This block of commented-out lines of code should be removed.(æÃ¼Äÿÿÿÿÿ8ËÅ¯İ1
+java:S3776m"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(ßáŠø8Ò»ß°İ1
+]	java:S125s"<This block of commented-out lines of code should be removed.(æÃ¼Äÿÿÿÿÿ8ä»ß°İ1
 L
-java:S1197s"*Move the array designators [] to the type.(êñ‘ûÿÿÿÿ8ËÅ¯İ1
+java:S1197y"*Move the array designators [] to the type.(êñ‘ûÿÿÿÿ8å»ß°İ1
 L
-java:S1197t"*Move the array designators [] to the type.(³¢²úÿÿÿÿ8ËÅ¯İ1
+java:S1197z"*Move the array designators [] to the type.(³¢²úÿÿÿÿ8æ»ß°İ1
 D
-java:S1110¯"!Remove these useless parentheses.(ÊÔÂïşÿÿÿÿ8ÌÅ¯İ1
+java:S1110µ"!Remove these useless parentheses.(ÊÔÂïşÿÿÿÿ8é»ß°İ1
 â
-java:S6541g"ÄA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 73 to 64, Complexity from 18 to 14, Nesting Level from 4 to 2, Number of Variables from 8 to 6.(ßáŠø8ÍÅ¯İ1
+java:S6541m"ÄA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 73 to 64, Complexity from 18 to 14, Nesting Level from 4 to 2, Number of Variables from 8 to 6.(ßáŠø8ë»ß°İ1

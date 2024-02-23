@@ -30,8 +30,8 @@ public class menu {
             System.out.println("4. Insertar");
             System.out.println("5. Eliminar");
             System.out.println("6. Reconstruir");
-            System.out.println("7. Dar valor a 'x'");
-            System.out.println("8. Sumar");
+            System.out.println("7. Sumar");
+            System.out.println("8. Valor de 'x'");
             System.out.println("9. Multiplicar");
             System.out.println("10. Salir");
             logger.info("Ingrese una opcion: ");
@@ -76,7 +76,13 @@ public class menu {
                 case 7:
                     break;
                 case 8:
-
+                    System.out.println("En que forma quiere darl valor a x: \n" + "1. Forma 1 \n" + "2. Forma 2 \n" + "3. Forma 3 \n");
+                    opcion = scanner.nextInt();
+                    if (opcion == 1){
+                        System.out.println("Valor de x");
+                        int x = scanner.nextInt();
+                        Poli.evaluar(x);
+                    }
                     break;
                 case 9:
                     break;

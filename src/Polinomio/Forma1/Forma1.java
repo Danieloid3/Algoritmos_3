@@ -99,10 +99,21 @@ public class Forma1 {
 
     public int evaluar(int x){
         int i;
+        int grado = datosUtiles-1;
         int suma = 0;
+
         for (i = 1; i < datosUtiles; i++) {
-            suma += vector[i] * x^vector[0];
+            suma = (int) (suma + vector[i] * Math.pow(x,grado));
+            grado--;
+            if (grado == 0) {
+                suma = suma + vector[i+1];
+                break;
+            }
+
+
         }
+        System.out.println(Math.pow(2,2));
+        System.out.println("La suma es: " + suma);
         return suma;
     }
 
