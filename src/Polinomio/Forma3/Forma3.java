@@ -30,6 +30,16 @@ public class Forma3 {
     }
 
 
+    public int evaluar(int x){
+        int resultado = 0;
+        Nodo aux = punta;
+        while (aux != null){
+            resultado += aux.getCoeficiente() * Math.pow(x, aux.getExpontente());
+            aux = aux.getLiga();
+        }
+        return resultado;
+    }
+
 
 
 }

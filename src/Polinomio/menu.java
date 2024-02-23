@@ -17,6 +17,8 @@ public class menu {
         String vectorS[] = null;
         int grado = 0;
         Forma1 Poli = new Forma1(0);
+        Forma1 Poli2 = new Forma1(0);
+
         Forma3 Poli3 = new Forma3();
         int opcion;
         int exponente;
@@ -74,6 +76,16 @@ public class menu {
                 case 6:
                     break;
                 case 7:
+
+                   String vectorSuma[] = crear();
+                   Forma1 PoliSuma = new Forma1(grado(vectorSuma) + 1);
+                   PoliSuma.ingresar(vectorSuma);
+                   PoliSuma.sumar(Poli);
+
+
+
+
+
                     break;
                 case 8:
                     System.out.println("En que forma quiere darl valor a x: \n" + "1. Forma 1 \n" + "2. Forma 2 \n" + "3. Forma 3 \n");
@@ -82,6 +94,16 @@ public class menu {
                         System.out.println("Valor de x");
                         int x = scanner.nextInt();
                         Poli.evaluar(x);
+                    }
+                    //if(opcion == 2){
+                    //    System.out.println("Valor de x");
+                    //    int x = Integer.parseInt(scanner.nextLine());
+                    //    Poli2.evaluar(x);
+                    //}
+                    if (opcion == 3){
+                        System.out.println("Valor de x");
+                        int x = scanner.nextInt();
+                        Poli3.evaluar(x);
                     }
                     break;
                 case 9:
@@ -93,7 +115,7 @@ public class menu {
                 default:
                     logger.info("Opcion no valida");
             }
-        } while (opcion != 3);
+        } while (opcion != 10);
     }
     public static int grado (String vector[])
     {
