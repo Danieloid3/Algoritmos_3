@@ -11,3 +11,6 @@ N
 src/Polinomio/Forma3/Nodo.java,d\b\dbdc45af7854fd31c495764cce88bf5246605d55
 P
  src/Polinomio/Forma2/Forma2.java,9\7\97e8e5533c59d511f16bdf83165d122cab928fb3
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
