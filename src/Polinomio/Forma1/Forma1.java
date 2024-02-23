@@ -16,9 +16,7 @@ public class Forma1 {
         vector = new int[1];
     }
 
-    public int getDatosUtiles() {
-        return datosUtiles;
-    }
+    public int getDatosUtiles() {return datosUtiles;}
 
     public void setDatosUtiles(int datosUtiles) {
         this.datosUtiles = datosUtiles;

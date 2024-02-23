@@ -185,6 +185,14 @@ public class menu {
 
         return (vectorB);
     }
+    public int numTerminos(String vector[]){
+        int i;
+        int cont = 0;
+        for (i = 0; vector[i] != null; i += 2) {
+            cont++;
+        }
+        return cont;
+    }
 
 
 

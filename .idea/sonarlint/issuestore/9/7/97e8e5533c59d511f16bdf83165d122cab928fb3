@@ -1,4 +1,12 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ά’ϊ¥ϋÿÿÿÿ
-X
-java:S2094"BRemove this empty class, write its code or make it an "interface".(πι
+t
+java:S1104"WMake datosUtiles a static final constant or non-public and provide accessors if needed.(„ϊό8…‡°έ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ά’ϊ¥ϋÿÿÿÿ8¥«„―έ1
+G
+java:S1197"*Move the array designators [] to the type.(’¤άβ8…‡°έ1
+O
+java:S1481"-Remove this unused "posicion" local variable.(βόΪΟϋÿÿÿÿ8΅…‡°έ1
+C
+java:S1481 "&Remove this unused "j" local variable.(θκ»8¤…‡°έ1
+H
+java:S1481!"&Remove this unused "i" local variable.(ΎΨΰιόÿÿÿÿ8¥…‡°έ1
