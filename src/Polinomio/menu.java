@@ -2,7 +2,6 @@ package Polinomio;
 
 import Polinomio.Forma1.Forma1;
 import Polinomio.Forma3.Forma3;
-import Polinomio.Forma3.Nodo;
 
 import java.util.Scanner;
 import java.util.logging.Logger;
@@ -77,6 +76,7 @@ public class menu {
                 case 7:
                     break;
                 case 8:
+
                     break;
                 case 9:
                     break;
@@ -106,7 +106,7 @@ public class menu {
 
         logger.info("Ingrese el polinomio: ");
         String polinomio = scanner.nextLine();
-        //"1";
+        //"15x^2+8x^3-3-2x";
 
         String data = "";
         int j = 0;  //Contador para el vector de Strings
@@ -162,14 +162,15 @@ public class menu {
                 }
             }
 
-
-            if (i == vectorA.length - 1){
-                vectorB[j] = data;
-                if (Character.isDigit(vectorA[i])){
-                    vectorB[j + 1] = "0";
+                if (i == vectorA.length - 1) {
+                    if (data != "") {
+                        vectorB[j] = data;
+                        if (Character.isDigit(vectorA[i])) {
+                            vectorB[j + 1] = "0";
+                        }
+                    }
                 }
 
-            }
             if (i != vectorA.length - 1){
                 if ((data != "") && ((vectorA[i + 1] == '+' || vectorA[i + 1] == '-'))) {
                     vectorB[j] = data;
@@ -185,16 +186,4 @@ public class menu {
 
         return (vectorB);
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }

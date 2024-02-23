@@ -1,4 +1,6 @@
 
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹ã´¤
-@
-java:S1197"*Move the array designators [] to the type.(¨³ó¸
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹ã´¤8†èç¯Ý1
+G
+java:S1197"*Move the array designators [] to the type.(¨³ó¸8¦èç¯Ý1
+G	java:S106"+Replace this use of System.out by a logger.(€Ðñ´8¨èç¯Ý1
+F	java:S106"+Replace this use of System.out by a logger.(Ã¨¨%8¨èç¯Ý1

@@ -2,7 +2,7 @@ package Polinomio.Forma1;
 
 public class Forma1 {
     //Atributos
-    public int datosUtiles;
+    public int datosUtiles, posicion;
     int[] vector;
 
     //Constructor
@@ -49,21 +49,26 @@ public class Forma1 {
 
         return vectorB;
     }
-   /* public void Ajustar(){
+    public void Ajustar(){
         int cont=0,i =1;
-        while(i<datosUtiles && ){
-            if(vector[i]==0){
+        while(i<datosUtiles && vector[i]==0){
                 cont++;
-            }
-            i++;
+                i++;
         }
-    }*/
+        while(i<datosUtiles){
+            posicion= i-cont;
+            vector[i]=posicion;
+            i++;
+
+        }
+        datosUtiles=vector[0]-cont;
+    }
+
 
     public void eliminar(int exponente){
         int i=2;
         int j=3;
         int mayor=0;
-        int posicion = 0;
         int expontenteA=datosUtiles-i;
         int exponenteB=datosUtiles-j;
         if(vector[0]== exponente){
@@ -85,13 +90,21 @@ public class Forma1 {
             posicion = datosUtiles - exponente;
             vector[posicion] = Integer.parseInt("0");
         }
+
         System.out.println("--NUEVO VECTOR--");
         for ( i = 0; i < vector.length; i++) {
             System.out.println(vector[i]);
         }
     }
 
-
+    public int evaluar(int x){
+        int i;
+        int suma = 0;
+        for (i = 1; i < datosUtiles; i++) {
+            suma += vector[i] * x^vector[0];
+        }
+        return suma;
+    }
 
 
 
