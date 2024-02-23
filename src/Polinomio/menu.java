@@ -7,7 +7,7 @@ import Polinomio.Forma3.Nodo;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-import static Polinomio.Main.crear;
+
 
 
 public class menu {
@@ -100,6 +100,92 @@ public class menu {
         }
         return grado;
     }
+    public static String [] crear(){
+        Logger logger = Logger.getLogger(menu.class.getName());
+        Scanner scanner = new Scanner(System.in);
+
+        logger.info("Ingrese el polinomio: ");
+        String polinomio = scanner.nextLine();
+        //"1";
+
+        String data = "";
+        int j = 0;  //Contador para el vector de Strings
+        int i = 0; //Contador para el vector de caracteres
+
+        char vectorA[] = polinomio.toCharArray();
+        String vectorB[] = new String[vectorA.length];
+        while (i < vectorA.length) {
+
+            if (vectorA[i] == '-') {
+                if (vectorA[i + 1] == 'x') {
+                    data = "-1";
+                    i += 1;
+                } else {
+                    data = data + vectorA[i];
+                    i += 1;
+                }
+            }
+            if (Character.isDigit(vectorA[i])) {
+                data = data + vectorA[i];
+
+            }
+            if (vectorA[i] == '+') {
+                if (vectorA[i + 1] == 'x') {
+                    data = "1";
+                } else {
+                    data = data + vectorA[i + 1];
+                    i += 1;
+                }
+            }
+            if (vectorA[i] == '^') {
+                data = data + vectorA[i + 1];
+                vectorB[j] = data;
+                data = "";
+                i += 1;
+                j += 1;
+            }
+            if (vectorA[i] == 'x') {
+                if (data == ""){
+                    vectorB[j] = "1";
+                    j += 1;
+                }
+                else{
+                    vectorB[j] = data;
+                    data = "";
+                    j += 1;
+
+                }
+
+                if (i == vectorA.length - 1) {
+                    vectorB[j] = "1";
+                    j += 1;
+                }
+            }
+
+
+            if (i == vectorA.length - 1){
+                vectorB[j] = data;
+                if (Character.isDigit(vectorA[i])){
+                    vectorB[j + 1] = "0";
+                }
+
+            }
+            if (i != vectorA.length - 1){
+                if ((data != "") && ((vectorA[i + 1] == '+' || vectorA[i + 1] == '-'))) {
+                    vectorB[j] = data;
+                    vectorB[j + 1] = "0";
+                    data = "";
+                    j += 2;
+                }
+            }
+
+            i++;
+
+        }
+
+        return (vectorB);
+    }
+
 
 
 

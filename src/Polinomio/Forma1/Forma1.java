@@ -49,26 +49,33 @@ public class Forma1 {
 
         return vectorB;
     }
+   /* public void Ajustar(){
+        int cont=0,i =1;
+        while(i<datosUtiles && ){
+            if(vector[i]==0){
+                cont++;
+            }
+            i++;
+        }
+    }*/
 
     public void eliminar(int exponente){
-        int i=0;
+        int i=2;
         int j=3;
         int mayor=0;
         int posicion = 0;
-        int expontenteA=datosUtiles-vector[i];
-        int exponenteB=datosUtiles-vector[j];
+        int expontenteA=datosUtiles-i;
+        int exponenteB=datosUtiles-j;
         if(vector[0]== exponente){
             vector[0] = Integer.parseInt("0");
             vector[1] = Integer.parseInt("0");
-            i=2;
+
             while(i<datosUtiles){
                 if(expontenteA>exponenteB){
                     mayor = expontenteA;
                 }else {
                     mayor = exponenteB;
                 }
-                System.out.println(vector[i]+"<=");
-                System.out.println("=>"+vector[j]);
                 i++;
                 j++;
             }

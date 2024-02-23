@@ -1,0 +1,11 @@
+
+t
+java:S1104"WMake datosUtiles a static final constant or non-public and provide accessors if needed.(Ÿ„úü8£¯¼®İ1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õØg8¤¯¼®İ1
+G
+java:S1197#"*Move the array designators [] to the type.(’¤Üâ8Â¯¼®İ1
+G	java:S106-"+Replace this use of System.out by a logger.(¨ñ¸Ç8Â¯¼®İ1
+L	java:S106/"+Replace this use of System.out by a logger.(Ã«”Õşÿÿÿÿ8Â¯¼®İ1
+]	java:S1254"<This block of commented-out lines of code should be removed.(Å¨ŠÇüÿÿÿÿ8Â¯¼®İ1
+G	java:S106X"+Replace this use of System.out by a logger.(şâÖ‚8Ê¯¼®İ1
+L	java:S106Z"+Replace this use of System.out by a logger.(Ã«”Õşÿÿÿÿ8Ê¯¼®İ1
