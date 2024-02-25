@@ -1,5 +1,7 @@
 package Polinomio.Forma1;
 
+import static Polinomio.Main.crear;
+
 public class Forma1 {
     //Atributos
     public int datosUtiles, posicion;
@@ -32,7 +34,7 @@ public class Forma1 {
         this.vector = vector;
     }
 
-    public String[] ingresar(String vectorB[]) {
+    public String[] forma1(String vectorB[]) {
         int posicion;
         int j = 0;
         int i;
@@ -50,20 +52,6 @@ public class Forma1 {
         return vectorB;
     }
 
-    public void Ajustar() {
-        int cont = 0, i = 1;
-        while (i < datosUtiles && vector[i] == 0) {
-            cont++;
-            i++;
-        }
-        while (i < datosUtiles) {
-            posicion = i - cont;
-            vector[i] = posicion;
-            i++;
-
-        }
-        datosUtiles = vector[0] - cont;
-    }
 
 
     public void eliminar(int exponente) {
@@ -120,9 +108,10 @@ public class Forma1 {
         int j = 1;
         int expontenteA = datosUtiles - i;
         int exponenteB = Poli.getDatosUtiles() - j;
+        int mayor=0;
         Forma1 suma = new Forma1(0);
 
-        if(vector[0] > Poli.getVector()[0]){
+        if(expontenteA> exponenteB){
             suma = new Forma1(datosUtiles);
             suma.vector[0] = vector[0];
 
@@ -133,20 +122,23 @@ public class Forma1 {
         }
 
         while (i < datosUtiles && j < Poli.getDatosUtiles()) {
-            if (expontenteA == exponenteB) {
+            if (expontenteA > exponenteB) {
+                suma.vector[i] = vector[i];
+                i++;
                 suma.vector[i] = vector[i] + Poli.getVector()[j];
                 i++;
                 j++;
-            } else if (expontenteA > exponenteB) {
-                suma.vector[i] = vector[i];
-                i++;
-            } else {
+            } else if (expontenteA < exponenteB) {
                 suma.vector[i] = Poli.getVector()[j];
                 j++;
-
+            } else if (expontenteA == exponenteB){
+                suma.vector[i] = vector[i] + Poli.getVector()[j];
+                i++;
+                j++;
             }
+            suma.vector[i] = vector[i] + Poli.getVector()[j];
         }
-        System.out.println("--SUMA--");
+        System.out.println("--SUMA FORMA 1--");
         for (i = 0; i < suma.vector.length; i++) {
             System.out.println(suma.vector[i]);
         }
@@ -154,4 +146,61 @@ public class Forma1 {
 
     }
 
+    public void insertar(String[] vectorMonomio) {
+
+        String[] nuevoF1 = vectorMonomio;
+
+        int expoA = Integer.parseInt(nuevoF1[0]);
+        int expoV= vector[0];
+        int pos=0;
+        if(expoA > expoV){
+            for(int i =1; i < datosUtiles;i++){
+                pos = nuevoF1.length - 1-expoV;
+                vector[pos] = Integer.parseInt(nuevoF1[i]);
+                expoV--;
+            }
+        }
+        else if(expoA < expoV) {
+            pos = datosUtiles - expoA;
+            vector[pos] += Integer.parseInt(nuevoF1[1]);
+        }else{
+            vector[1]+= Integer.parseInt(nuevoF1[1]);
+        }
+        System.out.println("--INSERTAR FORMA 1--");
+        for (int i = 0; i < nuevoF1.length; i++) {
+            System.out.println(nuevoF1[i]);
+        }
+
+    }
+
+    public void reconstruir(){
+        String cadena = "";
+        for (int i = 1; i < vector.length; i++) {
+            int grado = datosUtiles - i;
+            if(vector[i] != 0){
+                if(vector[i] != 1 && vector[i] != -1){
+                    cadena += vector[i];
+                }else if(vector[i] == -1){
+                    if(i == vector.length-1){
+                        cadena += vector[i];
+                    }else{
+                        cadena += "-";
+                    }
+                }else if(vector[i] == 1){
+                    if(i == vector.length-1){
+                        cadena += "+"+vector[i];
+                    }
+                }
+                if(grado == 1){
+                    cadena += "x";
+                }else if(grado > 1){
+                    cadena += "x^"+grado;
+                }
+                if(i+1 < vector.length && vector[i+1] > 0){
+                    cadena += "+";
+                }
+            }
+        }
+        System.out.println(cadena);
+    }
 }

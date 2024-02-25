@@ -1,72 +1,0 @@
-
-R
-java:S1066Â"/Merge this if statement with the enclosing one.(Í–ù³ıÿÿÿÿ8½şè³İ1
-R
-java:S1066Ë"/Merge this if statement with the enclosing one.(ÊÔÂïşÿÿÿÿ8½şè³İ1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â•Ôòùÿÿÿÿ8½şè³İ1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åæÉëûÿÿÿÿ8½şè³İ1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Ãû«üÿÿÿÿ8½şè³İ1
-r	java:S117Q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡§ôıÿÿÿÿÿ8½şè³İ1
-:
-java:S1643˜"Use a StringBuilder instead.(îˆşí8½şè³İ1
-:
-java:S1643"Use a StringBuilder instead.(îˆşí8½şè³İ1
-?
-java:S1643¤"Use a StringBuilder instead.(üš”øÿÿÿÿ8½şè³İ1
-?
-java:S1643©"Use a StringBuilder instead.(üš”øÿÿÿÿ8½şè³İ1
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ãÄîä8½şè³İ1
-Z
-java:S4973°"<Strings and Boxed types should be compared using "equals()".(¹Ç‹­8½şè³İ1
-_
-java:S4973Â"<Strings and Boxed types should be compared using "equals()".(Í–ù³ıÿÿÿÿ8½şè³İ1
-_
-java:S4973Ë"<Strings and Boxed types should be compared using "equals()".(ÊÔÂïşÿÿÿÿ8½şè³İ1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹‡¼úûÿÿÿÿ8½şè³İ1
-[
-java:S1854"9Remove this useless assignment to local variable "Poli2".(åæÉëûÿÿÿÿ8€é³İ1
-G
-java:S1197"*Move the array designators [] to the type.(ÕŸËï8‘€é³İ1
-L
-java:S1481"*Remove this unused "Poli2" local variable.(åæÉëûÿÿÿÿ8–€é³İ1
-G	java:S106"+Replace this use of System.out by a logger.(Æ™¬8–€é³İ1
-L	java:S106"+Replace this use of System.out by a logger.(§ˆ®¾ÿÿÿÿÿ8–€é³İ1
-L	java:S106"+Replace this use of System.out by a logger.(Ç„¸ùÿÿÿÿ8–€é³İ1
-L	java:S106"+Replace this use of System.out by a logger.(ïÄîèùÿÿÿÿ8–€é³İ1
-L	java:S106 "+Replace this use of System.out by a logger.(¹ıÜıùÿÿÿÿ8–€é³İ1
-G	java:S106!"+Replace this use of System.out by a logger.(œ‚´ã8›€é³İ1
-L	java:S106""+Replace this use of System.out by a logger.(äõ¿éşÿÿÿÿ8›€é³İ1
-L	java:S106#"+Replace this use of System.out by a logger.(ø€îøÿÿÿÿ8›€é³İ1
-G	java:S106$"+Replace this use of System.out by a logger.(Ìß”Ó8Ÿ€é³İ1
-L	java:S106%"+Replace this use of System.out by a logger.(ëß“¿ıÿÿÿÿ8 €é³İ1
-F	java:S106&"+Replace this use of System.out by a logger.(¨•·v8 €é³İ1
-L
-java:S11973"*Move the array designators [] to the type.(ÔÛ»ªüÿÿÿÿ8 €é³İ1
-G	java:S1069"+Replace this use of System.out by a logger.(†êó8¥€é³İ1
-O
-java:S61269"2Replace this String concatenation with Text block.(†êó8¥€é³İ1
-L	java:S106<"+Replace this use of System.out by a logger.(ÿ—¯œıÿÿÿÿ8¦€é³İ1
-]	java:S125@"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8¨€é³İ1
-G
-java:S1197P"*Move the array designators [] to the type.(íÌÙ–8¨€é³İ1
-G	java:S106["+Replace this use of System.out by a logger.(­È‘ì8¬€é³İ1
-O
-java:S6126["2Replace this String concatenation with Text block.(­È‘ì8¬€é³İ1
-L	java:S106^"+Replace this use of System.out by a logger.(™âëÕøÿÿÿÿ8´€é³İ1
-X	java:S125b"<This block of commented-out lines of code should be removed.(‡Ñƒ¹8´€é³İ1
-L	java:S106h"+Replace this use of System.out by a logger.(™âëÕøÿÿÿÿ8´€é³İ1
-L
-java:S1197x"*Move the array designators [] to the type.(Şç±œûÿÿÿÿ8´€é³İ1
-p
-java:S3776ƒ"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(ßáŠø8´€é³İ1
-^	java:S125‰"<This block of commented-out lines of code should be removed.(æÃ¼Äÿÿÿÿÿ8´€é³İ1
-M
-java:S1197"*Move the array designators [] to the type.(êñ‘ûÿÿÿÿ8´€é³İ1
-M
-java:S1197"*Move the array designators [] to the type.(³¢²úÿÿÿÿ8´€é³İ1
-D
-java:S1110Ë"!Remove these useless parentheses.(ÊÔÂïşÿÿÿÿ8¼€é³İ1
-ã
-java:S6541"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 80 to 64, Complexity from 15 to 14, Nesting Level from 3 to 2, Number of Variables from 15 to 6.(Çµí‘8¼€é³İ1
-ã
-java:S6541ƒ"ÄA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 73 to 64, Complexity from 18 to 14, Nesting Level from 4 to 2, Number of Variables from 8 to 6.(ßáŠø8¼€é³İ1
