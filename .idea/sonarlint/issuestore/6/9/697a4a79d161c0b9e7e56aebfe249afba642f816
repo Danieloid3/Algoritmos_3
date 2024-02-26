@@ -1,96 +1,91 @@
 
 j
-java:S1192:"MDefine a constant instead of duplicating this literal "3. Forma 3 
-" 6 times.(´ü÷Ù8¹øè¹Ş1
+java:S1192="MDefine a constant instead of duplicating this literal "3. Forma 3 
+" 6 times.(´ü÷Ù8ü¦‡½Ş1
 j
-java:S1192:"MDefine a constant instead of duplicating this literal "2. Forma 2 
-" 6 times.(´ü÷Ù8ºøè¹Ş1
+java:S1192="MDefine a constant instead of duplicating this literal "2. Forma 2 
+" 6 times.(´ü÷Ù8ü¦‡½Ş1
 j
-java:S1192:"MDefine a constant instead of duplicating this literal "1. Forma 1 
-" 6 times.(´ü÷Ù8ºøè¹Ş1
+java:S1192="MDefine a constant instead of duplicating this literal "1. Forma 1 
+" 6 times.(´ü÷Ù8ü¦‡½Ş1
 R
-java:S1066ˆ"/Merge this if statement with the enclosing one.(Í–ù³ıÿÿÿÿ8»øè¹Ş1
+java:S1066ÿ"/Merge this if statement with the enclosing one.(Í–ù³ıÿÿÿÿ8ı¦‡½Ş1
 R
-java:S1066‘"/Merge this if statement with the enclosing one.(ÊÔÂïşÿÿÿÿ8»øè¹Ş1
-s	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡§ôıÿÿÿÿÿ8»øè¹Ş1
-n	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÁÍŠ8»øè¹Ş1
-n	java:S117¤"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÅ8»øè¹Ş1
+java:S1066ˆ"/Merge this if statement with the enclosing one.(ÊÔÂïşÿÿÿÿ8ı¦‡½Ş1
+m	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô—ò³8Ï–œ½Ş1
+s	java:S117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡§ôıÿÿÿÿÿ8ı¦‡½Ş1
+n	java:S117œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÅ8ı¦‡½Ş1
 :
-java:S1643Ş"Use a StringBuilder instead.(îˆşí8¼øè¹Ş1
+java:S1643Õ"Use a StringBuilder instead.(îˆşí8ı¦‡½Ş1
 :
-java:S1643ã"Use a StringBuilder instead.(îˆşí8¼øè¹Ş1
+java:S1643Ú"Use a StringBuilder instead.(îˆşí8ı¦‡½Ş1
 ?
-java:S1643ê"Use a StringBuilder instead.(üš”øÿÿÿÿ8¼øè¹Ş1
+java:S1643á"Use a StringBuilder instead.(üš”øÿÿÿÿ8ı¦‡½Ş1
 ?
-java:S1643ï"Use a StringBuilder instead.(üš”øÿÿÿÿ8¼øè¹Ş1
+java:S1643æ"Use a StringBuilder instead.(üš”øÿÿÿÿ8ı¦‡½Ş1
 Z
-java:S4973ö"<Strings and Boxed types should be compared using "equals()".(¹Ç‹­8Äøè¹Ş1
+java:S4973í"<Strings and Boxed types should be compared using "equals()".(¹Ç‹­8ş¦‡½Ş1
 _
-java:S4973ˆ"<Strings and Boxed types should be compared using "equals()".(Í–ù³ıÿÿÿÿ8Óøè¹Ş1
+java:S4973ÿ"<Strings and Boxed types should be compared using "equals()".(Í–ù³ıÿÿÿÿ8ş¦‡½Ş1
 _
-java:S4973‘"<Strings and Boxed types should be compared using "equals()".(ÊÔÂïşÿÿÿÿ8ãøè¹Ş1
+java:S4973ˆ"<Strings and Boxed types should be compared using "equals()".(ÊÔÂïşÿÿÿÿ8ş¦‡½Ş1
 o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Çµí‘8¡úè¹Ş1
-a
-java:S1854—">Remove this useless assignment to local variable "vectorSuma".(Óş‰µüÿÿÿÿ8¢úè¹Ş1
-G	java:S106"+Replace this use of System.out by a logger.(Æ™¬8¦úè¹Ş1
-L	java:S106"+Replace this use of System.out by a logger.(ûšŞ‚ÿÿÿÿÿ8¦úè¹Ş1
-G	java:S106"+Replace this use of System.out by a logger.(óÏÁÒ8¦úè¹Ş1
-L	java:S106"+Replace this use of System.out by a logger.(¹€Òôùÿÿÿÿ8¦úè¹Ş1
-L	java:S106"+Replace this use of System.out by a logger.(¹ıÜıùÿÿÿÿ8¦úè¹Ş1
-G	java:S106"+Replace this use of System.out by a logger.(œ‚´ã8§úè¹Ş1
-L	java:S106 "+Replace this use of System.out by a logger.(äõ¿éşÿÿÿÿ8§úè¹Ş1
-L	java:S106!"+Replace this use of System.out by a logger.(Ê¿øÿÿÿÿ8§úè¹Ş1
-L	java:S106""+Replace this use of System.out by a logger.(ÚõÙÿÿÿÿÿ8§úè¹Ş1
-L	java:S106#"+Replace this use of System.out by a logger.(ëß“¿ıÿÿÿÿ8§úè¹Ş1
-F	java:S106$"+Replace this use of System.out by a logger.(¨•·v8§úè¹Ş1
-G	java:S106:"+Replace this use of System.out by a logger.(´ü÷Ù8¨úè¹Ş1
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(Çµí‘8ò§‡½Ş1
+G	java:S106"+Replace this use of System.out by a logger.(Æ™¬8ö§‡½Ş1
+L	java:S106"+Replace this use of System.out by a logger.(ûšŞ‚ÿÿÿÿÿ8ö§‡½Ş1
+G	java:S106"+Replace this use of System.out by a logger.(óÏÁÒ8ö§‡½Ş1
+L	java:S106"+Replace this use of System.out by a logger.(¹€Òôùÿÿÿÿ8ö§‡½Ş1
+L	java:S106"+Replace this use of System.out by a logger.(¹ıÜıùÿÿÿÿ8ö§‡½Ş1
+G	java:S106"+Replace this use of System.out by a logger.(œ‚´ã8ö§‡½Ş1
+L	java:S106 "+Replace this use of System.out by a logger.(äõ¿éşÿÿÿÿ8÷§‡½Ş1
+L	java:S106!"+Replace this use of System.out by a logger.(Ê¿øÿÿÿÿ8÷§‡½Ş1
+L	java:S106""+Replace this use of System.out by a logger.(ÚõÙÿÿÿÿÿ8÷§‡½Ş1
+L	java:S106#"+Replace this use of System.out by a logger.(ëß“¿ıÿÿÿÿ8÷§‡½Ş1
+F	java:S106$"+Replace this use of System.out by a logger.(¨•·v8ú§‡½Ş1
+L	java:S1067"+Replace this use of System.out by a logger.(¡²ƒüÿÿÿÿ8ı§‡½Ş1
+G	java:S106="+Replace this use of System.out by a logger.(´ü÷Ù8ı§‡½Ş1
 O
-java:S6126:"2Replace this String concatenation with Text block.(´ü÷Ù8¨úè¹Ş1
-F	java:S106="+Replace this use of System.out by a logger.(—­“D8©úè¹Ş1
-]	java:S125A"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8©úè¹Ş1
-G	java:S106Q"+Replace this use of System.out by a logger.(†êó8ªúè¹Ş1
+java:S6126="2Replace this String concatenation with Text block.(´ü÷Ù8ı§‡½Ş1
+F	java:S106@"+Replace this use of System.out by a logger.(—­“D8ş§‡½Ş1
+]	java:S125D"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8ş§‡½Ş1
+G	java:S106P"+Replace this use of System.out by a logger.(†êó8ÿ§‡½Ş1
 O
-java:S6126Q"2Replace this String concatenation with Text block.(†êó8ªúè¹Ş1
-L	java:S106T"+Replace this use of System.out by a logger.(ÿ—¯œıÿÿÿÿ8ªúè¹Ş1
-L	java:S106Y"+Replace this use of System.out by a logger.(ÿ—¯œıÿÿÿÿ8ªúè¹Ş1
-X	java:S125]"<This block of commented-out lines of code should be removed.(÷”‰à8«úè¹Ş1
-G	java:S106e"+Replace this use of System.out by a logger.(ö³¡æ8«úè¹Ş1
+java:S6126P"2Replace this String concatenation with Text block.(†êó8ş§‡½Ş1
+L	java:S106S"+Replace this use of System.out by a logger.(ÿ—¯œıÿÿÿÿ8ÿ§‡½Ş1
+L	java:S106X"+Replace this use of System.out by a logger.(ÿ—¯œıÿÿÿÿ8ÿ§‡½Ş1
+G	java:S106b"+Replace this use of System.out by a logger.(ö³¡æ8€¨‡½Ş1
 O
-java:S6126e"2Replace this String concatenation with Text block.(ö³¡æ8«úè¹Ş1
-]	java:S125j"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8«úè¹Ş1
-G	java:S106r"+Replace this use of System.out by a logger.(çëî8¬úè¹Ş1
+java:S6126b"2Replace this String concatenation with Text block.(ö³¡æ8ÿ§‡½Ş1
+]	java:S125g"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8€¨‡½Ş1
+G	java:S106o"+Replace this use of System.out by a logger.(çëî8€¨‡½Ş1
 O
-java:S6126r"2Replace this String concatenation with Text block.(çëî8¬úè¹Ş1
-G	java:S106u"+Replace this use of System.out by a logger.(õÁ¢­8¬úè¹Ş1
-]	java:S125y"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8¬úè¹Ş1
-G	java:S106"+Replace this use of System.out by a logger.(õÁ¢­8¬úè¹Ş1
-H	java:S106…"+Replace this use of System.out by a logger.(ÄúÖê8­úè¹Ş1
+java:S6126o"2Replace this String concatenation with Text block.(çëî8€¨‡½Ş1
+G	java:S106r"+Replace this use of System.out by a logger.(õÁ¢­8€¨‡½Ş1
+]	java:S125v"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8€¨‡½Ş1
+H	java:S106€"+Replace this use of System.out by a logger.(ÄúÖê8¨‡½Ş1
 P
-java:S6126…"2Replace this String concatenation with Text block.(ÄúÖê8­úè¹Ş1
-^	java:S125"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8­úè¹Ş1
-R
-java:S1481—"/Remove this unused "vectorSuma" local variable.(Óş‰µüÿÿÿÿ8®úè¹Ş1
-H	java:S106Ÿ"+Replace this use of System.out by a logger.(»ÏÓÀ8®úè¹Ş1
+java:S6126€"2Replace this String concatenation with Text block.(ÄúÖê8€¨‡½Ş1
+^	java:S125‰"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8¨‡½Ş1
+H	java:S106—"+Replace this use of System.out by a logger.(»ÏÓÀ8‚¨‡½Ş1
 P
-java:S6126Ÿ"2Replace this String concatenation with Text block.(»ÏÓÀ8®úè¹Ş1
-H	java:S106¢"+Replace this use of System.out by a logger.(àåÿˆ8®úè¹Ş1
-^	java:S125¦"<This block of commented-out lines of code should be removed.(¦‚ß®ÿÿÿÿÿ8¯úè¹Ş1
-^	java:S125¨"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8¯úè¹Ş1
+java:S6126—"2Replace this String concatenation with Text block.(»ÏÓÀ8‚¨‡½Ş1
+H	java:S106š"+Replace this use of System.out by a logger.(àåÿˆ8Í™œ½Ş1
+^	java:S125"<This block of commented-out lines of code should be removed.(¦‚ß®ÿÿÿÿÿ8‚¨‡½Ş1
+^	java:S125 "<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8‚¨‡½Ş1
 M
-java:S1197¾"*Move the array designators [] to the type.(Şç±œûÿÿÿÿ8¯úè¹Ş1
+java:S1197µ"*Move the array designators [] to the type.(Şç±œûÿÿÿÿ8ƒ¨‡½Ş1
 p
-java:S3776É"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(ßáŠø8°úè¹Ş1
-^	java:S125Ï"<This block of commented-out lines of code should be removed.(æÃ¼Äÿÿÿÿÿ8²úè¹Ş1
+java:S3776À"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(ßáŠø8„¨‡½Ş1
+^	java:S125Æ"<This block of commented-out lines of code should be removed.(æÃ¼Äÿÿÿÿÿ8…¨‡½Ş1
 M
-java:S1197Õ"*Move the array designators [] to the type.(êñ‘ûÿÿÿÿ8³úè¹Ş1
+java:S1197Ì"*Move the array designators [] to the type.(êñ‘ûÿÿÿÿ8…¨‡½Ş1
 M
-java:S1197Ö"*Move the array designators [] to the type.(³¢²úÿÿÿÿ8³úè¹Ş1
+java:S1197Í"*Move the array designators [] to the type.(³¢²úÿÿÿÿ8…¨‡½Ş1
 D
-java:S1110‘"!Remove these useless parentheses.(ÊÔÂïşÿÿÿÿ8´úè¹Ş1
+java:S1110ˆ"!Remove these useless parentheses.(ÊÔÂïşÿÿÿÿ8†¨‡½Ş1
 H
-java:S1197Ÿ"*Move the array designators [] to the type.(Áè§‹8´úè¹Ş1
+java:S1197–"*Move the array designators [] to the type.(Áè§‹8†¨‡½Ş1
 ä
-java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 121 to 64, Complexity from 21 to 14, Nesting Level from 3 to 2, Number of Variables from 21 to 6.(Çµí‘8µúè¹Ş1
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 131 to 64, Complexity from 25 to 14, Nesting Level from 3 to 2, Number of Variables from 18 to 6.(Çµí‘8†¨‡½Ş1
 ã
-java:S6541É"ÄA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 73 to 64, Complexity from 18 to 14, Nesting Level from 4 to 2, Number of Variables from 8 to 6.(ßáŠø8µúè¹Ş1
+java:S6541À"ÄA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 73 to 64, Complexity from 18 to 14, Nesting Level from 4 to 2, Number of Variables from 8 to 6.(ßáŠø8†¨‡½Ş1

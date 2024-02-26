@@ -1,38 +1,60 @@
 
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ñ¢ıÿÿÿÿ8§Å½·Ş1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿õ‹ıÿÿÿÿ8§Å½·Ş1
-m	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ¶±¢8§Å½·Ş1
-r	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ñ¢ıÿÿÿÿ8§Å½·Ş1
-r	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØÈÅœøÿÿÿÿ8§Å½·Ş1
-r	java:S117q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ñ¢ıÿÿÿÿ8§Å½·Ş1
-m	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§¼ûí8§Å½·Ş1
-s	java:S117ƒ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë¤›Üøÿÿÿÿ8§Å½·Ş1
-n	java:S117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¬Ğ‘8§Å½·Ş1
-s	java:S117”"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡×ñ…ùÿÿÿÿ8ĞÎ¸Ş1
-s	java:S117•"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ñ¢ıÿÿÿÿ8Á–±¸Ş1
-s	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØÈÅœøÿÿÿÿ8Â–±¸Ş1
-n	java:S117—"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çü¬“8Ã–±¸Ş1
-n	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒµ¬­8Ã–±¸Ş1
+y	java:S127:"XRefactor the code in order to not assign to this loop counter from within the loop body.( æƒ«ıÿÿÿÿ8ôòü¼Ş1
+m	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğøáÒ8ôòü¼Ş1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¸„¸8ôòü¼Ş1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã›·Ö8õòü¼Ş1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÛ³8õòü¼Ş1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß…Òú8õòü¼Ş1
+n	java:S117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ò8õòü¼Ş1
+n	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–êõå8õòü¼Ş1
 >
-java:S1643]"Use a StringBuilder instead.(‡ÇÆğşÿÿÿÿ8§Å½·Ş1
+java:S1643"Use a StringBuilder instead.(õüıÿÿÿÿ8õòü¼Ş1
+>
+java:S1643$"Use a StringBuilder instead.(õüıÿÿÿÿ8õòü¼Ş1
+>
+java:S1643,"Use a StringBuilder instead.(õüıÿÿÿÿ8õòü¼Ş1
 9
-java:S1643`"Use a StringBuilder instead.(óì½½8§Å½·Ş1
->
-java:S1643b"Use a StringBuilder instead.(ã½ÑÌùÿÿÿÿ8§Å½·Ş1
+java:S16431"Use a StringBuilder instead.(îÃ¬Â8õòü¼Ş1
+?
+java:S1643¼"Use a StringBuilder instead.(‡ÇÆğşÿÿÿÿ8õòü¼Ş1
 9
-java:S1643e"Use a StringBuilder instead.(Ä£›8§Å½·Ş1
->
-java:S1643g"Use a StringBuilder instead.(–Ôª”şÿÿÿÿ8§Å½·Ş1
+java:S1643¿"Use a StringBuilder instead.(õ‚ø8õòü¼Ş1
+?
+java:S1643Á"Use a StringBuilder instead.(ã½ÑÌùÿÿÿÿ8õòü¼Ş1
+:
+java:S1643Ä"Use a StringBuilder instead.(Ä£›8õòü¼Ş1
+?
+java:S1643Æ"Use a StringBuilder instead.(’Ÿóúÿÿÿÿ8õòü¼Ş1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(¸¸„¸8™÷ü¼Ş1
+L
+java:S2201"/The return value of "toLowerCase" must be used.(İÏé’8š÷ü¼Ş1
 G
-java:S1197"*Move the array designators [] to the type.(¨³ó¸8àÆ½·Ş1
-G	java:S106)"+Replace this use of System.out by a logger.(óş•8ãÆ½·Ş1
-G	java:S106*"+Replace this use of System.out by a logger.(¯ç¦«8ãÆ½·Ş1
-L	java:S106A"+Replace this use of System.out by a logger.(ƒ‡µ†ùÿÿÿÿ8åÆ½·Ş1
-G	java:S106D"+Replace this use of System.out by a logger.(óş•8æÆ½·Ş1
-G	java:S106E"+Replace this use of System.out by a logger.(¯ç¦«8æÆ½·Ş1
-L	java:S106S"+Replace this use of System.out by a logger.(Á€æ–ÿÿÿÿÿ8çÆ½·Ş1
-G	java:S106l"+Replace this use of System.out by a logger.(¡ü¯¸8èÆ½·Ş1
-j	java:S100p"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ±ª8èÆ½·Ş1
-S
-java:S1854s"7Remove this useless assignment to local variable "aux".(ØŞ®H8èÆ½·Ş1
-L	java:S106y"+Replace this use of System.out by a logger.(×·ßÏşÿÿÿÿ8éÆ½·Ş1
+java:S1197"*Move the array designators [] to the type.(ÒÛ³8š÷ü¼Ş1
+G
+java:S1197"*Move the array designators [] to the type.(ß…Òú8š÷ü¼Ş1
+t
+java:S3776G"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ƒª×ıÿÿÿÿÿ8›÷ü¼Ş1
+`
+java:S1659H">Declare "x" and all following declarations on a separate line.(ÿó˜®üÿÿÿÿ8œ÷ü¼Ş1
+L	java:S106h"+Replace this use of System.out by a logger.(ŸÌúòÿÿÿÿÿ8÷ü¼Ş1
+G	java:S106j"+Replace this use of System.out by a logger.(‰÷Œù8÷ü¼Ş1
+G	java:S106r"+Replace this use of System.out by a logger.(”ÿÖğ8 ÷ü¼Ş1
+p
+java:S3776ƒ"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(éõú­8£÷ü¼Ş1
+X
+java:S1854„"5Remove this useless assignment to local variable "q".(¶œÁæüÿÿÿÿ8£÷ü¼Ş1
+B
+java:S1659„"Declare "q" on a separate line.(¶œÁæüÿÿÿÿ8¤÷ü¼Ş1
+H	java:S106¤"+Replace this use of System.out by a logger.(‡ÀÅ˜8¦÷ü¼Ş1
+H	java:S106­"+Replace this use of System.out by a logger.(¶ùğÄ8§÷ü¼Ş1
+H	java:S106Ë"+Replace this use of System.out by a logger.(¡ü¯¸8¨÷ü¼Ş1
+H	java:S106Ñ"+Replace this use of System.out by a logger.(Ö°“ë8¨÷ü¼Ş1
+M	java:S106Ù"+Replace this use of System.out by a logger.(ú¡ôİøÿÿÿÿ8©÷ü¼Ş1
+E
+java:S1659à"'Declare "resultado" on a separate line.(ô‹õ×8ª÷ü¼Ş1
+=
+java:S1659á"Declare "q" on a separate line.(ô«Üî8ª÷ü¼Ş1
+M	java:S106Ş"+Replace this use of System.out by a logger.(ß´¤şùÿÿÿÿ8ª÷ü¼Ş1
+H	java:S106‚"+Replace this use of System.out by a logger.(ºŠ¯á8¯÷ü¼Ş1
