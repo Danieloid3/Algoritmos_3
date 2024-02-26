@@ -1,48 +1,52 @@
 
 L
-java:S1066¾"/Merge this if statement with the enclosing one.(‘¼´78ã—ïŒŞ1
-r	java:S117j"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šìí¿ûÿÿÿÿ8šøîŒŞ1
+java:S1066¹"/Merge this if statement with the enclosing one.(‘¼´78ß¨Ó¹Ş1
+r	java:S117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šìí¿ûÿÿÿÿ8Š¾ğ¶Ş1
+s	java:S117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şª²ªıÿÿÿÿ8à¨Ó¹Ş1
+s	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úßâşÿÿÿÿ8™‚©·Ş1
+s	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úßâşÿÿÿÿ8š‚©·Ş1
+n	java:S117Ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú‰§Ñ8ô¥·Ş1
 ?
-java:S1643¶"Use a StringBuilder instead.(ÀôÍ˜şÿÿÿÿ8å—ïŒŞ1
+java:S1643±"Use a StringBuilder instead.(ÀôÍ˜şÿÿÿÿ8à¨Ó¹Ş1
 ?
-java:S1643¹"Use a StringBuilder instead.(ÀôÍ˜şÿÿÿÿ8å—ïŒŞ1
+java:S1643´"Use a StringBuilder instead.(ÀôÍ˜şÿÿÿÿ8à¨Ó¹Ş1
 ?
-java:S1643»"Use a StringBuilder instead.(ã½ÑÌùÿÿÿÿ8å—ïŒŞ1
+java:S1643¶"Use a StringBuilder instead.(ã½ÑÌùÿÿÿÿ8à¨Ó¹Ş1
 :
-java:S1643¿"Use a StringBuilder instead.(—ä›Ä8å—ïŒŞ1
+java:S1643º"Use a StringBuilder instead.(—ä›Ä8à¨Ó¹Ş1
 :
-java:S1643Ã"Use a StringBuilder instead.(Ä£›8å—ïŒŞ1
+java:S1643¾"Use a StringBuilder instead.(Ä£›8à¨Ó¹Ş1
 :
-java:S1643Å"Use a StringBuilder instead.(—‘„Ô8æ—ïŒŞ1
+java:S1643À"Use a StringBuilder instead.(—‘„Ô8à¨Ó¹Ş1
 ?
-java:S1643È"Use a StringBuilder instead.(‡ÇÆğşÿÿÿÿ8æ—ïŒŞ1
+java:S1643Ã"Use a StringBuilder instead.(‡ÇÆğşÿÿÿÿ8à¨Ó¹Ş1
 t
-java:S1104"WMake datosUtiles a static final constant or non-public and provide accessors if needed.(±²ìÁ8›øîŒŞ1
-q
-java:S1104"TMake posicion a static final constant or non-public and provide accessors if needed.(±²ìÁ8›øîŒŞ1
+java:S1104"WMake datosUtiles a static final constant or non-public and provide accessors if needed.(Ÿ„úü8á¨Ó¹Ş1
+³
+java:S1598"•This file "Forma1.java" should be located in "polinomio\Forma1" directory, not in "C:\Users\Emmanuel\IdeaProjects\Algoritmos_3\src\Polinomio\Forma1".(âÕöø8ã¨Ó¹Ş1
 U
-java:S2589†"7Remove this expression which always evaluates to "true"(¶“Şà8·øîŒŞ1
-C
-java:S1659"&Declare "posicion" on a separate line.(±²ìÁ8¸øîŒŞ1
+java:S2589"7Remove this expression which always evaluates to "true"(¶“Şà8öªÓ¹Ş1
 L
-java:S1197%"*Move the array designators [] to the type.(¶Ò¯úÿÿÿÿ8»øîŒŞ1
-]
-java:S1117&";Rename "posicion" which hides the field declared at line 7.(âüÚÏûÿÿÿÿ8»øîŒŞ1
-G	java:S106/"+Replace this use of System.out by a logger.(¨ñ¸Ç8»øîŒŞ1
-L	java:S1061"+Replace this use of System.out by a logger.(Ã«”Õşÿÿÿÿ8¼øîŒŞ1
-G	java:S106S"+Replace this use of System.out by a logger.(şâÖ‚8½øîŒŞ1
-L	java:S106U"+Replace this use of System.out by a logger.(Ã«”Õşÿÿÿÿ8½øîŒŞ1
-L	java:S106f"+Replace this use of System.out by a logger.(³°ßóúÿÿÿÿ8½øîŒŞ1
+java:S1197"*Move the array designators [] to the type.(àÜÛûÿÿÿÿ8ùªÓ¹Ş1
+G	java:S106)"+Replace this use of System.out by a logger.(¨ñ¸Ç8ì”Ê¹Ş1
+L	java:S106+"+Replace this use of System.out by a logger.(Ã«”Õşÿÿÿÿ8ì”Ê¹Ş1
+G	java:S106N"+Replace this use of System.out by a logger.(şâÖ‚8ûªÓ¹Ş1
+L	java:S106P"+Replace this use of System.out by a logger.(Ã«”Õşÿÿÿÿ8ûªÓ¹Ş1
+L	java:S106a"+Replace this use of System.out by a logger.(³°ßóúÿÿÿÿ8üªÓ¹Ş1
 Z
-java:S1854p"8Remove this useless assignment to local variable "suma".(Áüò‘ùÿÿÿÿ8¾øîŒŞ1
+java:S1854k"8Remove this useless assignment to local variable "suma".(Áüò‘ùÿÿÿÿ8ıªÓ¹Ş1
 G
-java:S1481o"*Remove this unused "mayor" local variable.(¾ûñ 8¾øîŒŞ1
-H	java:S106"+Replace this use of System.out by a logger.(ëô”ì8¿øîŒŞ1
-M	java:S106"+Replace this use of System.out by a logger.(¥Û‰«øÿÿÿÿ8¿øîŒŞ1
-H	java:S106©"+Replace this use of System.out by a logger.(¤ğ8ÀøîŒŞ1
-H	java:S106«"+Replace this use of System.out by a logger.(…º‘8ÀøîŒŞ1
+java:S1481j"*Remove this unused "mayor" local variable.(¾ûñ 8şªÓ¹Ş1
+H	java:S106ˆ"+Replace this use of System.out by a logger.(ëô”ì8€«Ó¹Ş1
+M	java:S106Š"+Replace this use of System.out by a logger.(¥Û‰«øÿÿÿÿ8€«Ó¹Ş1
+H	java:S106¤"+Replace this use of System.out by a logger.(¤ğ8„«Ó¹Ş1
+H	java:S106¦"+Replace this use of System.out by a logger.(…º‘8…«Ó¹Ş1
 u
-java:S3776°"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ïíßˆşÿÿÿÿ8î˜ïŒŞ1
-H	java:S106Ì"+Replace this use of System.out by a logger.(¡ü¯¸8ï˜ïŒŞ1
-S
-java:S1128"1Remove this unused import 'Polinomio.Main.crear'.(§ˆ«³ıÿÿÿÿ8ÁøîŒŞ1
+java:S3776«"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ïíßˆşÿÿÿÿ8…«Ó¹Ş1
+H	java:S106Ç"+Replace this use of System.out by a logger.(¡ü¯¸8“«Ó¹Ş1
+B
+java:S1659Ë"Declare "B" on a separate line.(úßâşÿÿÿÿ8¾„©·Ş1
+H
+java:S1197Ô"*Move the array designators [] to the type.(ú‰§Ñ8°õ¥·Ş1
+G	java:S106á"+Replace this use of System.out by a logger.(ö–“W8–«Ó¹Ş1
+M	java:S106ã"+Replace this use of System.out by a logger.(Ã«”Õşÿÿÿÿ8—«Ó¹Ş1

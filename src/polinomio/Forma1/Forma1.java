@@ -1,10 +1,8 @@
-package Polinomio.Forma1;
-
-import static Polinomio.Main.crear;
+package polinomio.Forma1;
 
 public class Forma1 {
     //Atributos
-    public int datosUtiles, posicion;
+    public int datosUtiles;
     int[] vector;
 
     //Constructor
@@ -13,10 +11,6 @@ public class Forma1 {
         vector = new int[datosUtiles + 1];
     }
 
-    public Forma1() {
-        datosUtiles = 0;
-        vector = new int[1];
-    }
 
     public int getDatosUtiles() {
         return datosUtiles;
@@ -34,7 +28,7 @@ public class Forma1 {
         this.vector = vector;
     }
 
-    public String[] forma1(String vectorB[]) {
+    public String[] ingresarForma1(String vectorB[]) {
         int posicion;
         int j = 0;
         int i;
@@ -57,6 +51,7 @@ public class Forma1 {
     public void eliminar(int exponente) {
         int i = 2;
         int j = 3;
+        int posicion;
         int mayor = 0;
         int expontenteA = datosUtiles - i;
         int exponenteB = datosUtiles - j;
@@ -203,4 +198,37 @@ public class Forma1 {
         }
         System.out.println(cadena);
     }
+
+   public void multiplicar(Forma1 Poli){
+       int[] A, B;
+       if (datosUtiles > Poli.datosUtiles) {
+           A = vector;
+           B = Poli.vector;
+       } else {
+           B = vector;
+           A = Poli.vector;
+       }
+
+       int C[] = new int[A[0] + B[0] +2];
+       C[0] = A[0] + B[0];
+       for (int j = 1; j < B.length; j++) {
+           if (B[j] != 0) {
+               for (int i = 1; i < A.length; i++) {
+                   if (A[i] != 0) {
+                       C[C[0] + 1 - ((A[0] + 1 - i) + (B[0] + 1 - j))] += A[i] * B[j];
+                   }
+               }
+           }
+       }
+        vector = C;
+        datosUtiles = vector[0] + 1;
+        System.out.println("--MULTIPLICACION FORMA 1--");
+        for (int i = 0; i < vector.length; i++) {
+            System.out.println(vector[i]);
+        }
+
+
+
+    }
+
 }
