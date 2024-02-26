@@ -1,0 +1,29 @@
+
+L
+java:S1066¹"/Merge this if statement with the enclosing one.(‘¼´78ã—ïŒŞ1
+r	java:S117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šìí¿ûÿÿÿÿ8šøîŒŞ1
+?
+java:S1643±"Use a StringBuilder instead.(ÀôÍ˜şÿÿÿÿ8å—ïŒŞ1
+?
+java:S1643´"Use a StringBuilder instead.(ÀôÍ˜şÿÿÿÿ8å—ïŒŞ1
+?
+java:S1643¶"Use a StringBuilder instead.(ã½ÑÌùÿÿÿÿ8å—ïŒŞ1
+:
+java:S1643º"Use a StringBuilder instead.(—ä›Ä8å—ïŒŞ1
+:
+java:S1643¾"Use a StringBuilder instead.(Ä£›8å—ïŒŞ1
+:
+java:S1643À"Use a StringBuilder instead.(—‘„Ô8æ—ïŒŞ1
+?
+java:S1643Ã"Use a StringBuilder instead.(‡ÇÆğşÿÿÿÿ8æ—ïŒŞ1
+t
+java:S1104"WMake datosUtiles a static final constant or non-public and provide accessors if needed.(Ÿ„úü8›øîŒŞ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(âÕöø8Úê£Ş1
+U
+java:S2589"7Remove this expression which always evaluates to "true"(¶“Şà8·øîŒŞ1
+L
+java:S1197"*Move the array designators [] to the type.(àÜÛûÿÿÿÿ8»øîŒŞ1
+Z
+java:S1854k"8Remove this useless assignment to local variable "suma".(Áüò‘ùÿÿÿÿ8¾øîŒŞ1
+G
+java:S1481j"*Remove this unused "mayor" local variable.(¾ûñ 8¾øîŒŞ1

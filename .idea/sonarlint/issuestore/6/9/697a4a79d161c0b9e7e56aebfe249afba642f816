@@ -1,0 +1,55 @@
+
+j
+java:S1192:"MDefine a constant instead of duplicating this literal "3. Forma 3 
+" 6 times.(´ü÷Ù8Â…Î•Ş1
+j
+java:S1192:"MDefine a constant instead of duplicating this literal "2. Forma 2 
+" 6 times.(´ü÷Ù8Â…Î•Ş1
+j
+java:S1192:"MDefine a constant instead of duplicating this literal "1. Forma 1 
+" 6 times.(´ü÷Ù8Â…Î•Ş1
+R
+java:S1066ˆ"/Merge this if statement with the enclosing one.(Í–ù³ıÿÿÿÿ8Â…Î•Ş1
+R
+java:S1066‘"/Merge this if statement with the enclosing one.(ÊÔÂïşÿÿÿÿ8Ã…Î•Ş1
+s	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡§ôıÿÿÿÿÿ8Ã…Î•Ş1
+n	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÁÍŠ8Ã…Î•Ş1
+n	java:S117¤"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÅ8Ã…Î•Ş1
+:
+java:S1643Ş"Use a StringBuilder instead.(îˆşí8Ã…Î•Ş1
+:
+java:S1643ã"Use a StringBuilder instead.(îˆşí8Ã…Î•Ş1
+?
+java:S1643ê"Use a StringBuilder instead.(üš”øÿÿÿÿ8Ã…Î•Ş1
+?
+java:S1643ï"Use a StringBuilder instead.(üš”øÿÿÿÿ8Ã…Î•Ş1
+a
+java:S1854—">Remove this useless assignment to local variable "vectorSuma".(Óş‰µüÿÿÿÿ8˜†Î•Ş1
+O
+java:S6126:"2Replace this String concatenation with Text block.(´ü÷Ù8†Î•Ş1
+O
+java:S6126Q"2Replace this String concatenation with Text block.(†êó8†Î•Ş1
+O
+java:S6126e"2Replace this String concatenation with Text block.(ö³¡æ8†Î•Ş1
+O
+java:S6126r"2Replace this String concatenation with Text block.(çëî8†Î•Ş1
+P
+java:S6126…"2Replace this String concatenation with Text block.(ÄúÖê8†Î•Ş1
+R
+java:S1481—"/Remove this unused "vectorSuma" local variable.(Óş‰µüÿÿÿÿ8Ÿ†Î•Ş1
+P
+java:S6126Ÿ"2Replace this String concatenation with Text block.(»ÏÓÀ8Ÿ†Î•Ş1
+M
+java:S1197¾"*Move the array designators [] to the type.(Şç±œûÿÿÿÿ8 †Î•Ş1
+M
+java:S1197Õ"*Move the array designators [] to the type.(êñ‘ûÿÿÿÿ8¢†Î•Ş1
+M
+java:S1197Ö"*Move the array designators [] to the type.(³¢²úÿÿÿÿ8¢†Î•Ş1
+D
+java:S1110‘"!Remove these useless parentheses.(ÊÔÂïşÿÿÿÿ8¢†Î•Ş1
+H
+java:S1197Ÿ"*Move the array designators [] to the type.(Áè§‹8£†Î•Ş1
+ä
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 121 to 64, Complexity from 21 to 14, Nesting Level from 3 to 2, Number of Variables from 21 to 6.(Çµí‘8£†Î•Ş1
+ã
+java:S6541É"ÄA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 73 to 64, Complexity from 18 to 14, Nesting Level from 4 to 2, Number of Variables from 8 to 6.(ßáŠø8£†Î•Ş1

@@ -1,10 +1,8 @@
-package Polinomio.Forma1;
-
-import static Polinomio.Main.crear;
+package polinomio.Forma1;
 
 public class Forma1 {
     //Atributos
-    public int datosUtiles, posicion;
+    public int datosUtiles;
     int[] vector;
 
     //Constructor
@@ -13,10 +11,6 @@ public class Forma1 {
         vector = new int[datosUtiles + 1];
     }
 
-    public Forma1() {
-        datosUtiles = 0;
-        vector = new int[1];
-    }
 
     public int getDatosUtiles() {
         return datosUtiles;
@@ -34,7 +28,7 @@ public class Forma1 {
         this.vector = vector;
     }
 
-    public String[] forma1(String vectorB[]) {
+    public String[] ingresarForma1(String vectorB[]) {
         int posicion;
         int j = 0;
         int i;
@@ -57,6 +51,7 @@ public class Forma1 {
     public void eliminar(int exponente) {
         int i = 2;
         int j = 3;
+        int posicion;
         int mayor = 0;
         int expontenteA = datosUtiles - i;
         int exponenteB = datosUtiles - j;

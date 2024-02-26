@@ -1,4 +1,4 @@
-package Polinomio.Forma3;
+package polinomio.Forma3;
 
 public class Nodo {
     private Nodo punta;

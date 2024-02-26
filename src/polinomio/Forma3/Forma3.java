@@ -1,6 +1,4 @@
-package Polinomio.Forma3;
-
-import java.util.Scanner;
+package polinomio.Forma3;
 
 public class Forma3 {
     private Nodo punta;
@@ -95,7 +93,7 @@ public class Forma3 {
         }
     }
 
-    public void Eliminar(int dato){
+    /*public void Eliminar(int dato){
         Nodo P=punta;
         Nodo Q=P.getLiga();
         boolean found = false;
@@ -130,7 +128,7 @@ public class Forma3 {
         x.setLigaD(P);
         x.setLigaI(Q);
         if (P == Q) this.punta = x;
-    }
+    }*/
 
 }
 

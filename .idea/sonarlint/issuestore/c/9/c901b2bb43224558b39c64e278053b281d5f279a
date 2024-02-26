@@ -25,64 +25,25 @@ java:S1643İ"Use a StringBuilder instead.(îˆşí8ƒŠŞ1
 java:S1643ä"Use a StringBuilder instead.(üš”øÿÿÿÿ8ƒŠŞ1
 ?
 java:S1643é"Use a StringBuilder instead.(üš”øÿÿÿÿ8ƒŠŞ1
-Z
-java:S4973ğ"<Strings and Boxed types should be compared using "equals()".(¹Ç‹­8ƒŠŞ1
-_
-java:S4973‚"<Strings and Boxed types should be compared using "equals()".(Í–ù³ıÿÿÿÿ8ƒŠŞ1
-_
-java:S4973‹"<Strings and Boxed types should be compared using "equals()".(ÊÔÂïşÿÿÿÿ8ƒŠŞ1
-o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Çµí‘8ß…ŠŞ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹‡¼úûÿÿÿÿ8ïŒ’’Ş1
 a
 java:S1854‘">Remove this useless assignment to local variable "vectorSuma".(Óş‰µüÿÿÿÿ8à…ŠŞ1
-G	java:S106"+Replace this use of System.out by a logger.(Æ™¬8ã…ŠŞ1
-L	java:S106"+Replace this use of System.out by a logger.(ûšŞ‚ÿÿÿÿÿ8ã…ŠŞ1
-G	java:S106"+Replace this use of System.out by a logger.(óÏÁÒ8ã…ŠŞ1
-L	java:S106"+Replace this use of System.out by a logger.(¹€Òôùÿÿÿÿ8ã…ŠŞ1
-L	java:S106"+Replace this use of System.out by a logger.(¹ıÜıùÿÿÿÿ8ä…ŠŞ1
-G	java:S106"+Replace this use of System.out by a logger.(œ‚´ã8ä…ŠŞ1
-L	java:S106"+Replace this use of System.out by a logger.(äõ¿éşÿÿÿÿ8ä…ŠŞ1
-L	java:S106"+Replace this use of System.out by a logger.(Ê¿øÿÿÿÿ8ä…ŠŞ1
-L	java:S106 "+Replace this use of System.out by a logger.(ÚõÙÿÿÿÿÿ8ä…ŠŞ1
-L	java:S106!"+Replace this use of System.out by a logger.(ëß“¿ıÿÿÿÿ8ä…ŠŞ1
-F	java:S106""+Replace this use of System.out by a logger.(¨•·v8ä…ŠŞ1
-G	java:S1064"+Replace this use of System.out by a logger.(´ü÷Ù8å…ŠŞ1
 O
 java:S61264"2Replace this String concatenation with Text block.(´ü÷Ù8å…ŠŞ1
-F	java:S1067"+Replace this use of System.out by a logger.(—­“D8å…ŠŞ1
-]	java:S125;"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8æ…ŠŞ1
-G	java:S106K"+Replace this use of System.out by a logger.(†êó8æ…ŠŞ1
 O
 java:S6126K"2Replace this String concatenation with Text block.(†êó8æ…ŠŞ1
-L	java:S106N"+Replace this use of System.out by a logger.(ÿ—¯œıÿÿÿÿ8æ…ŠŞ1
-]	java:S125R"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8æ…ŠŞ1
-G	java:S106_"+Replace this use of System.out by a logger.(ö³¡æ8æ…ŠŞ1
 O
 java:S6126_"2Replace this String concatenation with Text block.(ö³¡æ8ç…ŠŞ1
-]	java:S125d"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8ç…ŠŞ1
-G	java:S106l"+Replace this use of System.out by a logger.(çëî8ç…ŠŞ1
 O
 java:S6126l"2Replace this String concatenation with Text block.(çëî8ç…ŠŞ1
-G	java:S106o"+Replace this use of System.out by a logger.(õÁ¢­8ç…ŠŞ1
-]	java:S125s"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8ç…ŠŞ1
-G	java:S106y"+Replace this use of System.out by a logger.(õÁ¢­8ç…ŠŞ1
-G	java:S106"+Replace this use of System.out by a logger.(ÄúÖê8è…ŠŞ1
 O
 java:S6126"2Replace this String concatenation with Text block.(ÄúÖê8è…ŠŞ1
-^	java:S125ˆ"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8è…ŠŞ1
 R
 java:S1481‘"/Remove this unused "vectorSuma" local variable.(Óş‰µüÿÿÿÿ8è…ŠŞ1
-H	java:S106™"+Replace this use of System.out by a logger.(»ÏÓÀ8é…ŠŞ1
 P
 java:S6126™"2Replace this String concatenation with Text block.(»ÏÓÀ8é…ŠŞ1
-H	java:S106œ"+Replace this use of System.out by a logger.(àåÿˆ8ê…ŠŞ1
-^	java:S125 "<This block of commented-out lines of code should be removed.( ·Ñüÿÿÿÿ8ë…ŠŞ1
-^	java:S125¢"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8ë…ŠŞ1
 M
 java:S1197¸"*Move the array designators [] to the type.(Şç±œûÿÿÿÿ8ì…ŠŞ1
-p
-java:S3776Ã"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(ßáŠø8í…ŠŞ1
-^	java:S125É"<This block of commented-out lines of code should be removed.(æÃ¼Äÿÿÿÿÿ8î…ŠŞ1
 M
 java:S1197Ï"*Move the array designators [] to the type.(êñ‘ûÿÿÿÿ8î…ŠŞ1
 M
