@@ -1,184 +1,115 @@
 package polinomio.Forma3;
 
-import java.util.Scanner;
-
-
 public class Forma3 {
     private Nodo punta;
 
-    public Forma3(String cadena) {
-        String[] Vs = crearVectorString(cadena);
-        punta = null;
-        for (int i = 0; i < Vs.length && Vs[i] != null; i += 2) {
-            insertarDescendente(Integer.parseInt(Vs[i]), Integer.parseInt(Vs[i + 1]));
-        }
+    public Forma3() {
+        this.punta = null;
     }
 
-    public String[] crearVectorString(String Cadena) {
-        String S = "";
-        int j = 0;
 
-        Cadena.toLowerCase();
-
-        char Vc[] = Cadena.toCharArray();
-        String Vs[] = new String[Vc.length + 1];
-
-        for (int i = 0; i < Vc.length; i++) {
-            if (Character.isDigit(Vc[i])) {
-                S += Character.toString(Vc[i]);
-                if (i == Vc.length - 1) {
-                    Vs[j] = S;
-                    Vs[j + 1] = "0";
-                }
-            } else if (Vc[i] == '-' || Vc[i] == '+') {
-                if (S.equals("")) {
-                    if (Vc[i] == '-') {
-                        S += Character.toString(Vc[i]);
-                    }
-                } else {
-                    Vs[j] = S;
-                    Vs[j + 1] = "0";
-                    j += 2;
-                    S = "";
-                    if (Vc[i] == '-') {
-                        S += Character.toString(Vc[i]);
-                    }
-                }
-            } else if (Vc[i] == 'x') {
-                if (S.equals("") || Vc[i - 1] == '-') {
-                    S += "1";
-                    Vs[j] = S;
-                } else {
-                    Vs[j] = S;
-                }
-                j++;
-                S = "";
-                if (i != Vc.length - 1 && Vc[i + 1] == '^') {
-                    Vs[j] = Character.toString(Vc[i + 2]);
-                    i += 2;
-                    j++;
-                } else {
-                    Vs[j] = "1";
-                    j++;
-                }
-
-            }
-        }
-
-        return Vs;
-    }
-
-    public void insertarDescendente(int d, int c) {
-        Nodo p = punta, x = new Nodo(d, c), q = punta;
-        if (punta == null) {
-            punta = x;
-            punta.setLiga(null);
-        } else {
-            if (x.getExponente() < p.getExponente()) {
-                do {
-                    p = p.getLiga();
-                } while (p != null && x.getExponente() < p.getExponente());
-                if (p != null) {
-                    x.setLiga(p);
-                    while (q.getLiga() != p) {
-                        q = q.getLiga();
-                    }
-                    q.setLiga(x);
-                } else {
-                    while (q.getLiga() != p) {
-                        q = q.getLiga();
-                    }
-                    q.setLiga(x);
-                }
+    public void forma3(String[] vectorB) {
+        for (int i = 0; vectorB[i] != null && i < vectorB.length; i += 2) {
+            Nodo nuevo = new Nodo(Integer.parseInt(vectorB[i]), Integer.parseInt(vectorB[i + 1]));
+            if (punta == null) {
+                punta = nuevo;
             } else {
-                x.setLiga(punta);
-                punta = x;
+                Nodo aux = punta;
+                while (aux.getLiga() != null) {
+                    aux = aux.getLiga();
+                }
+                aux.setLiga(nuevo);
             }
+        }
+
+    }
+    public void ordenar()
+    {
+        Nodo P = new Nodo();
+        Nodo Q = new Nodo();
+        int coeficiente;
+        int exponente;
+        for (P = punta; P != null; P = P.getLiga()) {
+            for (Q = P.getLiga(); Q != null; Q = Q.getLiga()) {
+                if (P.getExponente() < Q.getExponente()) {
+                    coeficiente = P.getCoeficiente();
+                    exponente = P.getExponente();
+                    P.setCoeficiente(Q.getCoeficiente());
+                    P.setExponente(Q.getExponente());
+                    Q.setCoeficiente(coeficiente);
+                    Q.setExponente(exponente);
+                }
+            }
+        }
+
+
+        P = punta;
+        while (P != null) {
+            System.out.println("[" + P.getCoeficiente() + "]"+ "[" +P.getExponente() + "]");
+            P = P.getLiga();
         }
     }
 
-    public void mostrar() {
-        Nodo x = punta;
-        do {
-            if (x.getLiga() == null) {
-                System.out.print("[" + x.getCoeficiente() + "][" + x.getExponente() + "]\n");
+    public void sumar(Forma3 Poli){
+        Nodo P = punta;
+        Nodo Q = Poli.punta;
+        while (P != null && Q != null) {
+            if (P.getExponente() == Q.getExponente()) {
+                P.setCoeficiente(P.getCoeficiente() + Q.getCoeficiente());
+                P = P.getLiga();
+                Q = Q.getLiga();
+            } else if (P.getExponente() < Q.getExponente()) {
+                Nodo aux = new Nodo(Q.getCoeficiente(), Q.getExponente());
+                aux.setLiga(P);
+                P = aux;
+                Q = Q.getLiga();
             } else {
-                System.out.print("[" + x.getCoeficiente() + "][" + x.getExponente() + "]-->");
+                P = P.getLiga();
             }
-            x = x.getLiga();
-        } while (x != null);
+        }
+        P = punta;
+        System.out.println("--SUMA FORMA 3--");
+        while (P != null) {
+            System.out.println("[" + P.getCoeficiente() + "]"+ "[" +P.getExponente() + "]");
+            P = P.getLiga();
+        }
     }
 
-    public void insertar() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingresa el monomio a insertar: ");
-        String cadena = scanner.nextLine();
+    public void evaluar(int x) {
+        Nodo aux = punta;
+        int resultado = 0;
 
-        Forma3 monomio = new Forma3(cadena);
-        Nodo x = punta;
-        while (x != null && x.getExponente() != monomio.punta.getExponente()) {
-            x = x.getLiga();
+        while (aux != null) {
+            resultado += aux.getCoeficiente() * (int)Math.pow(x, aux.getExponente());
+            aux = aux.getLiga();
         }
-        if (x == null) {
-            insertarDescendente(monomio.punta.getCoeficiente(), monomio.punta.getExponente());
-        } else {
-            x.setCoeficiente(x.getCoeficiente() + monomio.punta.getCoeficiente());
-        }
-        redimensionar();
-        mostrar();
+
+        System.out.println("El resultado al evaluar x es: " + resultado);
     }
 
-    public void redimensionar() {
-        Nodo x = punta, q = punta;
-        while (x != null) {
-            if (x.getCoeficiente() == 0) {
-                if (x == punta) {
-                    punta = x.getLiga();
-                    x.setLiga(null);
+    public void eliminar (int Dato) {
+        Nodo P = punta;
+        Nodo Q = null;
+        while (P != null) {
+            if (P.getCoeficiente()==Dato) {
+                if (P == null) {
+                    punta = P.getLiga();
                 } else {
-                    q = punta;
-                    while (q.getLiga() != x) {
-                        q = q.getLiga();
-                    }
-                    q.setLiga(x.getLiga());
-                    x.setLiga(null);
+                    Q.setLiga(P.getLiga());
                 }
+                break;
             }
-            if (x.getLiga() != null && x.getExponente() == x.getLiga().getExponente()) {
-                if (x == punta) {
-                    x.setCoeficiente(x.getCoeficiente() + x.getLiga().getCoeficiente());
-                } else {
-                    q = punta;
-                    while (q.getLiga() != x) {
-                        q = q.getLiga();
-                    }
-                    x.setCoeficiente(x.getCoeficiente() + x.getLiga().getCoeficiente());
-                }
-            }
-            x = x.getLiga();
+            Q = P;
+            P = P.getLiga();
+        }
+        P = punta;
+        System.out.println("---ELIMINAR FORMA 3");
+        while (P != null){
+            System.out.println("[" + P.getCoeficiente() + "]"+ "[" +P.getExponente() + "]");
+            P = P.getLiga();
         }
     }
-
-    public void eliminar() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingresa el monomio a eliminar: ");
-        String cadena = scanner.nextLine();
-
-        Forma3 monomio = new Forma3(cadena);
-        Nodo x = punta;
-        while (x != null && (x.getExponente() != monomio.punta.getExponente() || x.getCoeficiente() != monomio.punta.getCoeficiente())) {
-            x = x.getLiga();
-        }
-        if (x == null) {
-            System.out.println("No se encuentra el monomio a eliminar");
-        } else {
-            x.setCoeficiente(-x.getCoeficiente() + monomio.punta.getCoeficiente());
-            redimensionar();
-            mostrar();
-        }
-    }
-
-    public void reconstruir() {
+    public void Reconstruir() {
         String cadena = "";
         Nodo x = punta;
         while (x != null) {
@@ -203,83 +134,71 @@ public class Forma3 {
         System.out.println(cadena);
     }
 
-    public void evaluar() {
-        Nodo x = punta;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingresa el valor a evaluar: ");
-        int valor = scanner.nextInt();
+    public void Multiplicar (Forma3 poli3){
+        Forma3 Nuevo = new Forma3();
+        Nodo P = poli3.punta;
+        Nodo Q = punta;
 
-        int resultado = 0;
-        while (x != null) {
-            resultado += x.getCoeficiente() * (Math.pow(valor, x.getExponente()));
-            x = x.getLiga();
+        while (P != null){
+            while (Q != null){
+                Nuevo.InsertarOrdenado(P.getCoeficiente() * Q.getCoeficiente(), P.getExponente() + Q.getExponente());
+                Q = Q.getLiga();
+            }
+            Q = punta;
+            P = P.getLiga();
         }
-        System.out.println(resultado);
-    }
+        P = Nuevo.punta;
+        System.out.println("---MULTIPLICACION FORMA 3");
+        while (P != null){
+            System.out.println("[" + P.getCoeficiente() + "]"+ "[" +P.getExponente() + "]");
+            P = P.getLiga();
+        }
 
-    public void sumar() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingresa el polinomio a sumar: ");
-        String cadena = scanner.nextLine();
-        Forma3 polinomio = new Forma3(cadena), resultado = new Forma3();
-        Nodo x = punta, q = polinomio.punta;
-        while (x != null || q != null) {
-            if (x != null && q != null) {
-                if (x.getExponente() > q.getExponente()) {
-                    resultado.insertarDescendente(x.getCoeficiente(), x.getExponente());
-                    x = x.getLiga();
-                } else if (x.getExponente() < q.getExponente()) {
-                    resultado.insertarDescendente(q.getCoeficiente(), q.getExponente());
-                    q = q.getLiga();
-                } else if (x.getExponente() == q.getExponente()) {
-                    resultado.insertarDescendente((q.getCoeficiente() + x.getCoeficiente()), q.getExponente());
-                    q = q.getLiga();
-                    x = x.getLiga();
-                }
-            } else if (x != null) {
-                resultado.insertarDescendente(x.getCoeficiente(), x.getExponente());
-                x = x.getLiga();
+    }
+    public void MostrarLista ()
+    {
+        Nodo P = punta;
+        String s = "";
+        while (P != null)
+        {
+            System.out.println("[" + P.getCoeficiente() + "]"+ "[" +P.getExponente() + "]");
+            s += "[" + P.getCoeficiente() + "]"+ "[" +P.getExponente() + "]";
+            P= P.getLiga();
+        }
+    }
+    public void InsertarOrdenado(int Dato, int Exponente) {
+        Nodo x = new Nodo(); //Nodo (Dato)
+        x.setCoeficiente(Dato);
+        x.setExponente(Exponente);
+        Nodo P = punta;
+        boolean bool = false;
+        Nodo Q = null;
+
+        while (P != null) {
+            if (P.getExponente() == Exponente) {
+                P.setCoeficiente(P.getCoeficiente() + Dato);
+                bool = true;
+            }
+             P = P.getLiga();
+        }
+        if (bool == false) {
+            P = punta;
+            if (punta == null) {
+                punta = x;
             } else {
-                resultado.insertarDescendente(q.getCoeficiente(), q.getExponente());
-                q = q.getLiga();
+                while (P != null && P.getExponente() > Exponente) {
+                    Q = P;
+                    P = P.getLiga();
+                }
+                if (P == punta) {
+                    x.setLiga(punta);
+                    punta = x;
+                } else {
+                    Q.setLiga(x);
+                    x.setLiga(P);
+                }
             }
         }
-        resultado.redimensionar();
-        punta = resultado.punta;
-        mostrar();
-    }
-
-    public Forma3() {
-        punta = null;
-    }
-
-    public void multiplicar() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingresa el polinomio a multiplicar: ");
-        String cadena = scanner.nextLine();
-        Forma3 B = new Forma3(cadena);
-        Nodo p = punta;
-        Nodo q = B.punta;
-        Nodo aux;
-
-        int coeficiente = 0;
-        int exponente = 0;
-        Forma3 R = new Forma3();
-        while (q != null) {
-            aux = p;
-            while (p != null) {
-                exponente = p.getExponente() + q.getExponente();
-                coeficiente = p.getCoeficiente() * q.getCoeficiente();
-                R.insertarDescendente(coeficiente, exponente);
-                p = p.getLiga();
-            }
-            p = aux;
-            q = q.getLiga();
-        }
-        R.redimensionar();
-        punta = R.punta;
-        mostrar();
     }
 
 }
-

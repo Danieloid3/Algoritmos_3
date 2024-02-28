@@ -18,3 +18,9 @@ P
  src/polinomio/Forma2/Forma2.java,c\0\c0a1c1145042bf8caa31e49074a3c67d51659a18
 G
 src/polinomio/Main.java,6\9\697a4a79d161c0b9e7e56aebfe249afba642f816
+P
+ src/polinomio/Forma1/Forma1.java,1\9\1992b97d36d1723ef2b3484674b55fb25d8893ca
+N
+src/polinomio/Forma3/Nodo.java,3\8\38ea2099c08aed1487fa4192392d327c1f45af6c
+K
+src/polinomio/Forma3/a.java,d\b\db25be2dbb5b3b681b765ab48a035c17f0be3324

@@ -50,12 +50,11 @@ public class Main {
                     poli2.ingresarForma2(vectorS);
                     break;
                 case 3:
-                    scanner.nextLine();
-                    String Polinomio;
-                    System.out.println("Ingrese por favor el valor del polinomio");
-                    Polinomio = scanner.nextLine();
-                    poli3 = new Forma3(Polinomio);
-                    poli3.mostrar();
+                    String [] vector = crear();
+                    poli3 = new Forma3();
+                    poli3.forma3(vector);
+                    poli3.ordenar();
+
                     break;
                 case 4:
                     System.out.println("En que forma quiere insertar un dato: \n" + "1. Forma 1 \n" +  "2. Forma 2 \n" + "3. Forma 3 \n");
@@ -73,7 +72,12 @@ public class Main {
                         Poli2.insertar(exponente, coeficiente);
                     }*/
                     else if (opcion == 3){
-                       poli3.insertar();
+                        System.out.println("Coeficiente del dato a insertar ");
+                        int coeficiente = scanner.nextInt();
+                        System.out.println("Exponente del dato a insertar ");
+                        exponente = scanner.nextInt();
+                        poli3.InsertarOrdenado(coeficiente,exponente);
+                        poli3.MostrarLista();
                     }
                     break;
                 case 5:
@@ -90,7 +94,9 @@ public class Main {
                         poli2.eliminar2(exponente);
                     }
                     else if (opcion == 3){
-                        poli3.eliminar();
+                        System.out.println("Dato a eliminar");
+                        exponente=scanner.nextInt();
+                        poli3.eliminar(exponente);
                     }
 
                     break;
@@ -104,7 +110,7 @@ public class Main {
                         Poli2.reconstruir();
                     }*/
                     else if (opcion == 3){
-                        poli3.reconstruir();
+                        poli3.Reconstruir();
                     }
                     break;
                 case 7:
@@ -121,7 +127,9 @@ public class Main {
                         Poli2.evaluar(x);
                     }*/
                     else if (opcion == 3){
-                        poli3.evaluar();
+                        System.out.println("Ingrese el valor de 'x': ");
+                        int x = scanner.nextInt();
+                        poli3.evaluar(x);
                     }
                     break;
                 case 8:
@@ -143,8 +151,12 @@ public class Main {
                     }
                    */
                     else if (opcion == 3){
+                        String [] vectorSuma = crear();
+                        Forma3 PoliSuma = new Forma3();
+                        PoliSuma.forma3(vectorSuma);
+                        PoliSuma.ordenar();
+                        PoliSuma.sumar(poli3);
 
-                        poli3.sumar();
                     }
                     break;
                 case 9:
@@ -155,7 +167,7 @@ public class Main {
                         String [] vectorA = crear();
                         Forma1 PoliA = new Forma1(grado(vectorA) + 1);
                         PoliA.ingresarForma1(vectorA);
-                        //poli.multiplicar(PoliA);
+                        poli.multiplicar(PoliA);
                     }
                     /*else if (opcion == 2){
                         System.out.println("Ingrese el polinomio a multiplicar: ");
@@ -165,8 +177,11 @@ public class Main {
                         Poli2.multiplicar(PoliA);
                     }*/
                     else if (opcion == 3){
-
-                        poli3.multiplicar();
+                        System.out.println("Ingrese el polinomio a multiplicar: ");
+                        String [] vectorA = crear();
+                        Forma3 PoliMultiplicacion = new Forma3();
+                        PoliMultiplicacion.forma3(vectorA);
+                        PoliMultiplicacion.Multiplicar(poli3);
                     }
                     break;
 

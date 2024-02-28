@@ -208,7 +208,6 @@ public class Forma1 {
            B = vector;
            A = Poli.vector;
        }
-
        int C[] = new int[A[0] + B[0] +2];
        C[0] = A[0] + B[0];
        for (int j = 1; j < B.length; j++) {
