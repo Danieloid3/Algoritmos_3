@@ -3,7 +3,12 @@ package polinomio.Forma3;
 public class Forma3 {
     private Nodo punta;
 
-    public void forma3(String vectorB[]) {
+    public Forma3() {
+        this.punta = null;
+    }
+
+
+    public void forma3(String[] vectorB) {
         for (int i = 0; vectorB[i] != null && i < vectorB.length; i += 2) {
             Nodo nuevo = new Nodo(Integer.parseInt(vectorB[i]), Integer.parseInt(vectorB[i + 1]));
             if (punta == null) {
@@ -16,36 +21,36 @@ public class Forma3 {
                 aux.setLiga(nuevo);
             }
         }
+
     }
-
-    public void ordenar() {
-        Nodo P = punta;
-        Nodo Q = punta.getLiga();
-        Nodo aux = new Nodo(P.getCoeficiente(), P.getExponente());
-
-        while (P != null && Q != null) {
-            if (P.getExponente() < Q.getExponente()) {
-                aux.setCoeficiente(P.getCoeficiente());
-                aux.setExponente(P.getExponente());
-                P.setCoeficiente(Q.getCoeficiente());
-                P.setExponente(Q.getExponente());
-                Q.setCoeficiente(aux.getCoeficiente());
-                Q.setExponente(aux.getExponente());
-            } else {
-                Q = Q.getLiga();
-                P = P.getLiga();
+    public void ordenar()
+    {
+        Nodo P = new Nodo();
+        Nodo Q = new Nodo();
+        int coeficiente;
+        int exponente;
+        for (P = punta; P != null; P = P.getLiga()) {
+            for (Q = P.getLiga(); Q != null; Q = Q.getLiga()) {
+                if (P.getExponente() < Q.getExponente()) {
+                    coeficiente = P.getCoeficiente();
+                    exponente = P.getExponente();
+                    P.setCoeficiente(Q.getCoeficiente());
+                    P.setExponente(Q.getExponente());
+                    Q.setCoeficiente(coeficiente);
+                    Q.setExponente(exponente);
+                }
             }
         }
-        Nodo x = punta;
-        while (x != null) {
-            System.out.println(x.getCoeficiente());
-            System.out.println(x.getExponente());
-            x = x.getLiga();
-        }
 
+
+        P = punta;
+        while (P != null) {
+            System.out.println("[" + P.getCoeficiente() + "]"+ "[" +P.getExponente() + "]");
+            P = P.getLiga();
+        }
     }
 
-    public void sumar(Forma3 Poli) {
+    public void sumar(Forma3 Poli){
         Nodo P = punta;
         Nodo Q = Poli.punta;
         while (P != null && Q != null) {
@@ -62,12 +67,11 @@ public class Forma3 {
                 P = P.getLiga();
             }
         }
+        P = punta;
         System.out.println("--SUMA FORMA 3--");
-        Nodo x = punta;
-        while (x != null) {
-            System.out.println(x.getCoeficiente());
-            System.out.println(x.getExponente());
-            x = x.getLiga();
+        while (P != null) {
+            System.out.println("[" + P.getCoeficiente() + "]"+ "[" +P.getExponente() + "]");
+            P = P.getLiga();
         }
     }
 
@@ -76,31 +80,53 @@ public class Forma3 {
         int resultado = 0;
 
         while (aux != null) {
-            resultado += aux.getCoeficiente() * (int) Math.pow(x, aux.getExponente());
+            resultado += aux.getCoeficiente() * (int)Math.pow(x, aux.getExponente());
             aux = aux.getLiga();
         }
 
         System.out.println("El resultado al evaluar x es: " + resultado);
     }
 
-    public void reconstruir() {
+    public void eliminar (int Dato) {
+        Nodo P = punta;
+        Nodo Q = null;
+        while (P != null) {
+            if (P.getCoeficiente()==Dato) {
+                if (P == null) {
+                    punta = P.getLiga();
+                } else {
+                    Q.setLiga(P.getLiga());
+                }
+                break;
+            }
+            Q = P;
+            P = P.getLiga();
+        }
+        P = punta;
+        System.out.println("---ELIMINAR FORMA 3");
+        while (P != null){
+            System.out.println("[" + P.getCoeficiente() + "]"+ "[" +P.getExponente() + "]");
+            P = P.getLiga();
+        }
+    }
+    public void Reconstruir() {
         String cadena = "";
         Nodo x = punta;
         while (x != null) {
-            int coeficiente = x.getCoeficiente();
-            int exponente = x.getExponente();
-            if (x != punta && coeficiente > 0) {
+            int coe = x.getCoeficiente();
+            int gra = x.getExponente();
+            if (x != punta && coe > 0) {
                 cadena += "+";
             }
-            if (coeficiente != 1 && coeficiente != -1 || exponente == 0) {
-                cadena += coeficiente;
-            } else if (coeficiente == -1) {
+            if (coe != 1 && coe != -1 || gra == 0) {
+                cadena += coe;
+            } else if (coe == -1) {
                 cadena += "-";
             }
-            if (exponente != 0) {
+            if (gra != 0) {
                 cadena += "x";
-                if (exponente != 1) {
-                    cadena += "^" + exponente;
+                if (gra != 1) {
+                    cadena += "^" + gra;
                 }
             }
             x = x.getLiga();
@@ -108,65 +134,71 @@ public class Forma3 {
         System.out.println(cadena);
     }
 
+    public void Multiplicar (Forma3 poli3){
+        Forma3 Nuevo = new Forma3();
+        Nodo P = poli3.punta;
+        Nodo Q = punta;
 
-    public void Eliminar(int dato){
-        Nodo P = punta;
-        Nodo Q = P.getLiga();
-        Nodo aux = new Nodo(0,0);
-        while(P!=null && Q!=null){
-            if(Q.getExponente()==dato){
-                aux=Q;
-                Q=Q.getLiga();
-                aux.getLiga().setLiga(aux.getLiga());
-                System.out.println("El dato se eliminó de la lista");
-
-            }else{
-                Q=Q.getLiga();
-
-            }
-        }
-    }
-
-    public void insertarOrdenado(int coeficiente, int expontente) {
-        Nodo P = this.punta;
-        Nodo Q = P;
-        while (expontente > P.getExponente() && P != null) {
-            Q = P;
-            P = P.getLiga();
-        }
-        Nodo x = new Nodo(coeficiente, expontente);
-        if (P != Q){
-            Q.setLiga(x);
-        }
-        x.setLiga(P);
-        if (P == Q){
-            this.punta = x;
-        }
-
-    }
-
-    public void multiplicar(Forma3 Poli){
-        Nodo P = punta;
-        Nodo Q = Poli.punta;
-        Nodo R = null;
-        Nodo T = null;
         while (P != null){
             while (Q != null){
-                int coeficiente = P.getCoeficiente() * Q.getCoeficiente();
-                int exponente = P.getExponente() + Q.getExponente();
-                if (R == null){
-                    R = new Nodo(coeficiente, exponente);
-                    T = R;
-                }else{
-                    T.setLiga(new Nodo(coeficiente, exponente));
-                    T = T.getLiga();
-                }
+                Nuevo.InsertarOrdenado(P.getCoeficiente() * Q.getCoeficiente(), P.getExponente() + Q.getExponente());
                 Q = Q.getLiga();
             }
+            Q = punta;
             P = P.getLiga();
-            Q = Poli.punta;
         }
-        Forma3 resultado = new Forma3();
-        resultado.punta = R;
+        P = Nuevo.punta;
+        System.out.println("---MULTIPLICACION FORMA 3");
+        while (P != null){
+            System.out.println("[" + P.getCoeficiente() + "]"+ "[" +P.getExponente() + "]");
+            P = P.getLiga();
+        }
+
     }
+    public void MostrarLista ()
+    {
+        Nodo P = punta;
+        String s = "";
+        while (P != null)
+        {
+            System.out.println("[" + P.getCoeficiente() + "]"+ "[" +P.getExponente() + "]");
+            s += "[" + P.getCoeficiente() + "]"+ "[" +P.getExponente() + "]";
+            P= P.getLiga();
+        }
+    }
+    public void InsertarOrdenado(int Dato, int Exponente) {
+        Nodo x = new Nodo(); //Nodo (Dato)
+        x.setCoeficiente(Dato);
+        x.setExponente(Exponente);
+        Nodo P = punta;
+        boolean bool = false;
+        Nodo Q = null;
+
+        while (P != null) {
+            if (P.getExponente() == Exponente) {
+                P.setCoeficiente(P.getCoeficiente() + Dato);
+                bool = true;
+            }
+            P = P.getLiga();
+        }
+        if (bool == false) {
+            P = punta;
+            if (punta == null) {
+                punta = x;
+            } else {
+                while (P != null && P.getExponente() > Exponente) {
+                    Q = P;
+                    P = P.getLiga();
+                }
+                if (P == punta) {
+                    x.setLiga(punta);
+                    punta = x;
+                } else {
+                    Q.setLiga(x);
+                    x.setLiga(P);
+                }
+            }
+        }
+    }
+
 }

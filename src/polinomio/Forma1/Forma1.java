@@ -1,5 +1,6 @@
 package polinomio.Forma1;
 
+
 public class Forma1 {
     //Atributos
     public int datosUtiles;
@@ -45,7 +46,6 @@ public class Forma1 {
 
         return vectorB;
     }
-
 
 
     public void eliminar(int exponente) {
@@ -103,19 +103,17 @@ public class Forma1 {
         int j = 1;
         int expontenteA = datosUtiles - i;
         int exponenteB = Poli.getDatosUtiles() - j;
-        int mayor=0;
+        int mayor = 0;
         Forma1 suma = new Forma1(0);
 
-        if(expontenteA> exponenteB){
+        if (expontenteA > exponenteB) {
             suma = new Forma1(datosUtiles);
             suma.vector[0] = vector[0];
 
-        }else{
+        } else {
             suma = new Forma1(Poli.getDatosUtiles());
             suma.vector[0] = Poli.getVector()[0];
-
         }
-
         while (i < datosUtiles && j < Poli.getDatosUtiles()) {
             if (expontenteA > exponenteB) {
                 suma.vector[i] = vector[i];
@@ -126,7 +124,7 @@ public class Forma1 {
             } else if (expontenteA < exponenteB) {
                 suma.vector[i] = Poli.getVector()[j];
                 j++;
-            } else if (expontenteA == exponenteB){
+            } else {
                 suma.vector[i] = vector[i] + Poli.getVector()[j];
                 i++;
                 j++;
@@ -141,32 +139,57 @@ public class Forma1 {
 
     }
 
-    public void insertar(String[] vectorMonomio) {
+    public void insertar(String[] monomio) {
+        int expoB = vector[0];
+        int posicion = 0;
+        int[] nuevo = new int[monomio.length+datosUtiles];
 
-        String[] nuevoF1 = vectorMonomio;
+        for (int i = 0; i < monomio.length; i++) {
+            if (monomio[i] != null) {
+                nuevo[i] = Integer.parseInt(monomio[i]);
 
-        int expoA = Integer.parseInt(nuevoF1[0]);
-        int expoV= vector[0];
-        int pos=0;
-        if(expoA > expoV){
-            for(int i =1; i < datosUtiles;i++){
-                pos = nuevoF1.length - 1-expoV;
-                vector[pos] = Integer.parseInt(nuevoF1[i]);
-                expoV--;
             }
         }
-        else if(expoA < expoV) {
-            pos = datosUtiles - expoA;
-            vector[pos] += Integer.parseInt(nuevoF1[1]);
-        }else{
-            vector[1]+= Integer.parseInt(nuevoF1[1]);
-        }
-        System.out.println("--INSERTAR FORMA 1--");
-        for (int i = 0; i < nuevoF1.length; i++) {
-            System.out.println(nuevoF1[i]);
+        int nuevoCoeficiente = nuevo[0];
+        int exp_N = nuevo[1];
+        int i=0;
+        if (exp_N > expoB) {
+            nuevo[i]=nuevo[i+1];
+            nuevo[i+1]=nuevoCoeficiente;
+            for ( i = 1; i < datosUtiles + 1; i++) {
+                posicion = vector.length - expoB;
+                nuevo[posicion] = vector[i];
+                expoB--;
+            }
+            vector = nuevo;
+            datosUtiles = nuevo[0] + 1;
+
+            System.out.println("-- Insertar --");
+            for ( i = 0; i < nuevo.length; i++) {
+                System.out.println(nuevo[i]);
+            }
+        } else if (exp_N < expoB) {
+            posicion = datosUtiles - exp_N;
+            vector[posicion] += nuevo[1];
+            System.out.println("-- Insertar --");
+            for ( i = 0; i < vector.length ; i++) {
+                System.out.println(vector[i]);
+            }
+        } else if (exp_N == expoB) {
+            vector[1]+=nuevoCoeficiente;
+            System.out.println("-- Insertar --");
+            for ( i = 0; i < vector.length ; i++) {
+                System.out.println(vector[i]);
+            }
         }
 
+
     }
+
+
+
+
+
 
     public void reconstruir(){
         String cadena = "";
@@ -199,36 +222,32 @@ public class Forma1 {
         System.out.println(cadena);
     }
 
-   public void multiplicar(Forma1 Poli){
-       int[] A, B;
-       if (datosUtiles > Poli.datosUtiles) {
-           A = vector;
-           B = Poli.vector;
-       } else {
-           B = vector;
-           A = Poli.vector;
-       }
-
-       int C[] = new int[A[0] + B[0] +2];
-       C[0] = A[0] + B[0];
-       for (int j = 1; j < B.length; j++) {
-           if (B[j] != 0) {
-               for (int i = 1; i < A.length; i++) {
-                   if (A[i] != 0) {
-                       C[C[0] + 1 - ((A[0] + 1 - i) + (B[0] + 1 - j))] += A[i] * B[j];
-                   }
-               }
-           }
-       }
-        vector = C;
-        datosUtiles = vector[0] + 1;
-        System.out.println("--MULTIPLICACION FORMA 1--");
-        for (int i = 0; i < vector.length; i++) {
-            System.out.println(vector[i]);
+    public void multiplicar(Forma1 Poli){
+        int [] A;
+        int [] B;
+        if (datosUtiles > Poli.datosUtiles) {
+            A = vector;
+            B = Poli.vector;
+        } else {
+            B = vector;
+            A = Poli.vector;
+        }
+        int []C = new int[A[0] + B[0] +2];
+        C[0] = A[0] + B[0];
+        for (int j = 1; j < B.length; j++) {
+            if (B[j] != 0) {
+                for (int i = 1; i < A.length; i++) {
+                    if (A[i] != 0) {
+                        C[C[0] + 1 - ((A[0] + 1 - i) + (B[0] + 1 - j))] += A[i] * B[j];
+                    }
+                }
+            }
         }
 
-
-
+        System.out.println("--MULTIPLICACION FORMA 1--");
+        for (int i = 0; i < C.length; i++) {
+            System.out.println(C[i]);
+        }
     }
 
 }

@@ -19,7 +19,7 @@ public class Main {
         Forma2 poli2 = new Forma2(0);
         Forma3 poli3 = new Forma3();
         int opcion;
-        int exponente;
+        int exponente = 0;
 
 
         do {
@@ -51,8 +51,10 @@ public class Main {
                     break;
                 case 3:
                     String [] vector = crear();
+                    poli3 = new Forma3();
                     poli3.forma3(vector);
                     poli3.ordenar();
+
                     break;
                 case 4:
                     System.out.println("En que forma quiere insertar un dato: \n" + "1. Forma 1 \n" +  "2. Forma 2 \n" + "3. Forma 3 \n");
@@ -68,14 +70,15 @@ public class Main {
                         System.out.println("Coeficiente del dato a insertar ");
                         int coeficiente = Integer.parseInt(scanner.nextLine());
                         Poli2.insertar(exponente, coeficiente);
-                    }
-                    else if (opcion == 3){
-                        System.out.println("Exponente del dato a insertar ");
-                        exponente = Integer.parseInt(scanner.nextLine());
-                        System.out.println("Coeficiente del dato a insertar ");
-                        int coeficiente = Integer.parseInt(scanner.nextLine());
-                        poli3.insertar(exponente, coeficiente);
                     }*/
+                    else if (opcion == 3){
+                        System.out.println("Coeficiente del dato a insertar ");
+                        int coeficiente = scanner.nextInt();
+                        System.out.println("Exponente del dato a insertar ");
+                        exponente = scanner.nextInt();
+                        poli3.InsertarOrdenado(coeficiente,exponente);
+                        poli3.MostrarLista();
+                    }
                     break;
                 case 5:
                     System.out.println("En que forma quiere eliminar un dato: \n" + "1. Forma 1 \n" +  "2. Forma 2 \n" + "3. Forma 3 \n");
@@ -90,11 +93,11 @@ public class Main {
                         exponente = scanner.nextInt();
                         poli2.eliminar2(exponente);
                     }
-                    /*else if (opcion == 3){
-                        System.out.println("Exponente del dato a eliminar ");
-                        exponente = Integer.parseInt(scanner.nextLine());
+                    else if (opcion == 3){
+                        System.out.println("Dato a eliminar");
+                        exponente=scanner.nextInt();
                         poli3.eliminar(exponente);
-                    }*/
+                    }
 
                     break;
                 case 6:
@@ -105,10 +108,10 @@ public class Main {
                     }
                     /*else if (opcion == 2){
                         Poli2.reconstruir();
-                    }
-                    else if (opcion == 3){
-                        poli3.reconstruir();
                     }*/
+                    else if (opcion == 3){
+                        poli3.Reconstruir();
+                    }
                     break;
                 case 7:
                     System.out.println("En que forma quiere dar valor a 'x': \n" + "1. Forma 1 \n" +  "2. Forma 2 \n" + "3. Forma 3 \n");
@@ -118,11 +121,11 @@ public class Main {
                         int x = scanner.nextInt();
                         poli.evaluar(x);
                     }
-                    /*else if (opcion == 2){
+                    else if (opcion == 2){
                         System.out.println("Ingrese el valor de 'x': ");
-                        int x = Integer.parseInt(scanner.nextLine());
-                        Poli2.evaluar(x);
-                    }*/
+                        int x = scanner.nextInt();
+                        poli2.evaluar(x);
+                    }
                     else if (opcion == 3){
                         System.out.println("Ingrese el valor de 'x': ");
                         int x = scanner.nextInt();
@@ -139,17 +142,19 @@ public class Main {
                         PoliSuma.sumar(poli);
 
                     }
-                    /*else if (opcion == 2){
-                        System.out.println("Ingrese el polinomio a sumar: ");
+                    else if (opcion == 2){
+
                         String [] vectorSuma = crear();
-                        Forma2 PoliSuma = new Forma2();
-                        PoliA.ingresar(vectorSuma);
-                        Poli2.sumar(poli);
+
+                        Forma2 PoliSuma = new Forma2(terminos(vectorSuma) * 2);
+                        PoliSuma.ingresarForma2(vectorSuma);
+                        PoliSuma.sumar(poli2);
                     }
-                   */
+
                     else if (opcion == 3){
                         String [] vectorSuma = crear();
                         Forma3 PoliSuma = new Forma3();
+                        PoliSuma.forma3(vectorSuma);
                         PoliSuma.ordenar();
                         PoliSuma.sumar(poli3);
 
@@ -163,20 +168,22 @@ public class Main {
                         String [] vectorA = crear();
                         Forma1 PoliA = new Forma1(grado(vectorA) + 1);
                         PoliA.ingresarForma1(vectorA);
-                        //poli.multiplicar(PoliA);
+                        poli.multiplicar(PoliA);
                     }
-                    /*else if (opcion == 2){
+                    else if (opcion == 2){
                         System.out.println("Ingrese el polinomio a multiplicar: ");
                         String [] vectorA = crear();
-                        Forma2 PoliA = new Forma2(grado(vectorA) + 1);
-                        PoliA.ingresar(vectorA);
-                        Poli2.multiplicar(PoliA);
+                        Forma2 PoliA = new Forma2(terminos(vectorA) * 2);
+                        PoliA.ingresarForma2(vectorA);
+                        poli2.multiplicar(PoliA);
                     }
                     else if (opcion == 3){
                         System.out.println("Ingrese el polinomio a multiplicar: ");
                         String [] vectorA = crear();
-                        poli3.multiplicar(vectorA);
-                    }*/
+                        Forma3 PoliMultiplicacion = new Forma3();
+                        PoliMultiplicacion.forma3(vectorA);
+                        PoliMultiplicacion.Multiplicar(poli3);
+                    }
                     break;
 
                 case 10:
@@ -281,7 +288,11 @@ public class Main {
             i++;
 
         }
-
+        for(i=0;i<vectorB.length;i++){
+            if(vectorB[i] != null){
+                System.out.println(vectorB[i]);
+            }
+        }
         return (vectorB);
     }
     public static int terminos(String vector[]){

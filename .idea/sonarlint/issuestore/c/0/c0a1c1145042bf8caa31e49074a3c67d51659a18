@@ -1,3 +1,7 @@
 
-O
-java:S14816"-Remove this unused "posicion" local variable.(âüÚÏûÿÿÿÿ8ª­÷¶ß1
+m	java:S117q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ¤·¶8Î±•·ß1
+n	java:S117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÙÍž8Î±•·ß1
+D
+java:S1481Ç"&Remove this unused "j" local variable.(ä€€ÿ8¥µ•·ß1
+D
+java:S1481é"&Remove this unused "j" local variable.(ä€€ÿ8¥µ•·ß1

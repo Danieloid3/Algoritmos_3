@@ -11,6 +11,11 @@ public class Nodo {
         Liga = null;
     }
 
+    public Nodo() {
+
+    }
+
+
     public int getCoeficiente() {
         return Coeficiente;
     }
