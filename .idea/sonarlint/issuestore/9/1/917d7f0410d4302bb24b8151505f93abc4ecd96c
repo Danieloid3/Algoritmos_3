@@ -26,30 +26,20 @@ java:S1643"Use a StringBuilder instead.(Ä£›8¢ïøß1
 ?
 java:S1643"Use a StringBuilder instead.(’Ÿóúÿÿÿÿ8¢ïøß1
 ?
-java:S1643¥"Use a StringBuilder instead.(×Ï¹–øÿÿÿÿ8ÊÖÇß1
+java:S1643¥"Use a StringBuilder instead.(×Ï¹–øÿÿÿÿ8Á±ü­ß1
 \
-java:S2259b"?A "NullPointerException" could be thrown; "Q" is nullable here.(ÖÕí…8ÊÈ™ß1
+java:S2259b"?A "NullPointerException" could be thrown; "Q" is nullable here.(ÖÕí…8Æµü­ß1
 a
-java:S2583_"DChange this condition so that it does not always evaluate to "false"(Ú«•÷8ÊÈ™ß1
+java:S2583_"DChange this condition so that it does not always evaluate to "false"(Ú«•÷8Æµü­ß1
 R
 java:S1854"5Remove this useless assignment to local variable "Q".(«‰€ 8”ñøß1
 W
 java:S1854"5Remove this useless assignment to local variable "P".(’–ÉÁûÿÿÿÿ8”ñøß1
-L	java:S1060"+Replace this use of System.out by a logger.(­àşÆşÿÿÿÿ8–ñøß1
-L	java:S106G"+Replace this use of System.out by a logger.(ƒ‡µ†ùÿÿÿÿ8™ñøß1
-L	java:S106I"+Replace this use of System.out by a logger.(­àşÆşÿÿÿÿ8™ñøß1
-L	java:S106W"+Replace this use of System.out by a logger.(Á€æ–ÿÿÿÿÿ8šñøß1
-G	java:S106j"+Replace this use of System.out by a logger.(óíÊ…8Ÿñøß1
-L	java:S106l"+Replace this use of System.out by a logger.(­àşÆşÿÿÿÿ8é­şß1
 j	java:S100p"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ÒÂ8ñøß1
-H	java:S106†"+Replace this use of System.out by a logger.(¡ü¯¸8¨éÿß1
 p	java:S100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é­¶ÿÿÿÿÿ8Ÿñøß1
-M	java:S106—"+Replace this use of System.out by a logger.(ÏæÏúüÿÿÿÿ8…¬™ß1
-M	java:S106™"+Replace this use of System.out by a logger.(­àşÆşÿÿÿÿ8…¬™ß1
 p	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ»Ñÿüÿÿÿÿ8ØÌÅß1
 I
 java:S1481¡"&Remove this unused "s" local variable.(®şîìøÿÿÿÿ8ØÌÅß1
-M	java:S106¤"+Replace this use of System.out by a logger.(­àşÆşÿÿÿÿ8ØÌÅß1
 k	java:S100©"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ£Œ8¤ñøß1
 J
 java:S1125¸"'Remove the unnecessary boolean literal.(˜ÈÊ±ÿÿÿÿÿ8¦ñøß1

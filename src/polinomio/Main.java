@@ -121,11 +121,11 @@ public class Main {
                         int x = scanner.nextInt();
                         poli.evaluar(x);
                     }
-                    /*else if (opcion == 2){
+                    else if (opcion == 2){
                         System.out.println("Ingrese el valor de 'x': ");
-                        int x = Integer.parseInt(scanner.nextLine());
-                        Poli2.evaluar(x);
-                    }*/
+                        int x = scanner.nextInt();
+                        poli2.evaluar(x);
+                    }
                     else if (opcion == 3){
                         System.out.println("Ingrese el valor de 'x': ");
                         int x = scanner.nextInt();
@@ -142,14 +142,15 @@ public class Main {
                         PoliSuma.sumar(poli);
 
                     }
-                    /*else if (opcion == 2){
-                        System.out.println("Ingrese el polinomio a sumar: ");
+                    else if (opcion == 2){
+
                         String [] vectorSuma = crear();
-                        Forma2 PoliSuma = new Forma2();
-                        PoliA.ingresar(vectorSuma);
-                        Poli2.sumar(poli);
+
+                        Forma2 PoliSuma = new Forma2(terminos(vectorSuma) * 2);
+                        PoliSuma.ingresarForma2(vectorSuma);
+                        PoliSuma.sumar(poli2);
                     }
-                   */
+
                     else if (opcion == 3){
                         String [] vectorSuma = crear();
                         Forma3 PoliSuma = new Forma3();
@@ -169,13 +170,13 @@ public class Main {
                         PoliA.ingresarForma1(vectorA);
                         poli.multiplicar(PoliA);
                     }
-                    /*else if (opcion == 2){
+                    else if (opcion == 2){
                         System.out.println("Ingrese el polinomio a multiplicar: ");
                         String [] vectorA = crear();
-                        Forma2 PoliA = new Forma2(grado(vectorA) + 1);
-                        PoliA.ingresar(vectorA);
-                        Poli2.multiplicar(PoliA);
-                    }*/
+                        Forma2 PoliA = new Forma2(terminos(vectorA) * 2);
+                        PoliA.ingresarForma2(vectorA);
+                        poli2.multiplicar(PoliA);
+                    }
                     else if (opcion == 3){
                         System.out.println("Ingrese el polinomio a multiplicar: ");
                         String [] vectorA = crear();
@@ -287,7 +288,11 @@ public class Main {
             i++;
 
         }
-
+        for(i=0;i<vectorB.length;i++){
+            if(vectorB[i] != null){
+                System.out.println(vectorB[i]);
+            }
+        }
         return (vectorB);
     }
     public static int terminos(String vector[]){

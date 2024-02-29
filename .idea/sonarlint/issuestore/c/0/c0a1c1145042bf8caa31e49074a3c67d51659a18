@@ -1,7 +1,7 @@
 
-F	java:S106+"+Replace this use of System.out by a logger.(©­8Õ³Û¹Ş1
-L	java:S106-"+Replace this use of System.out by a logger.(Ã«”Õşÿÿÿÿ8Ö³Û¹Ş1
-O
-java:S14816"-Remove this unused "posicion" local variable.(âüÚÏûÿÿÿÿ8Ö³Û¹Ş1
-F	java:S106S"+Replace this use of System.out by a logger.(©­8×³Û¹Ş1
-L	java:S106U"+Replace this use of System.out by a logger.(Ã«”Õşÿÿÿÿ8Ø³Û¹Ş1
+m	java:S117q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ¤·¶8ïëÍ°ß1
+n	java:S117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÙÍ8¬ş»±ß1
+D
+java:S1481Ç"&Remove this unused "j" local variable.(ä€€ÿ8ƒ÷Á±ß1
+D
+java:S1481é"&Remove this unused "j" local variable.(ä€€ÿ8­ÇÜ±ß1
