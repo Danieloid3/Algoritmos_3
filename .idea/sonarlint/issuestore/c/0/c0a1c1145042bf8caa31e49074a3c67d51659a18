@@ -1,7 +1,3 @@
 
-F	java:S106+"+Replace this use of System.out by a logger.(©­8Õ³Û¹Ş1
-L	java:S106-"+Replace this use of System.out by a logger.(Ã«”Õşÿÿÿÿ8Ö³Û¹Ş1
 O
-java:S14816"-Remove this unused "posicion" local variable.(âüÚÏûÿÿÿÿ8Ö³Û¹Ş1
-F	java:S106S"+Replace this use of System.out by a logger.(©­8×³Û¹Ş1
-L	java:S106U"+Replace this use of System.out by a logger.(Ã«”Õşÿÿÿÿ8Ø³Û¹Ş1
+java:S14816"-Remove this unused "posicion" local variable.(âüÚÏûÿÿÿÿ8ª­÷¶ß1

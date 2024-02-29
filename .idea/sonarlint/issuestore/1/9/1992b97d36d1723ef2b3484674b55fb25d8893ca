@@ -1,0 +1,36 @@
+
+r	java:S117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šìí¿ûÿÿÿÿ8í ÷¶ß1
+s	java:S117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şª²ªıÿÿÿÿ8í ÷¶ß1
+s	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úßâşÿÿÿÿ8í ÷¶ß1
+s	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úßâşÿÿÿÿ8í ÷¶ß1
+n	java:S117Ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú‰§Ñ8í ÷¶ß1
+?
+java:S1643±"Use a StringBuilder instead.(ÀôÍ˜şÿÿÿÿ8í ÷¶ß1
+?
+java:S1643´"Use a StringBuilder instead.(ÀôÍ˜şÿÿÿÿ8í ÷¶ß1
+?
+java:S1643¶"Use a StringBuilder instead.(ã½ÑÌùÿÿÿÿ8í ÷¶ß1
+:
+java:S1643º"Use a StringBuilder instead.(—ä›Ä8í ÷¶ß1
+:
+java:S1643¾"Use a StringBuilder instead.(Ä£›8í ÷¶ß1
+:
+java:S1643À"Use a StringBuilder instead.(—‘„Ô8í ÷¶ß1
+?
+java:S1643Ã"Use a StringBuilder instead.(‡ÇÆğşÿÿÿÿ8í ÷¶ß1
+t
+java:S1104"WMake datosUtiles a static final constant or non-public and provide accessors if needed.(Ÿ„úü8ü ÷¶ß1
+U
+java:S2589"7Remove this expression which always evaluates to "true"(¶“Şà8Æ£÷¶ß1
+L
+java:S1197"*Move the array designators [] to the type.(àÜÛûÿÿÿÿ8È£÷¶ß1
+Z
+java:S1854k"8Remove this useless assignment to local variable "suma".(Áüò‘ùÿÿÿÿ8Ñ£÷¶ß1
+G
+java:S1481j"*Remove this unused "mayor" local variable.(¾ûñ 8Õ£÷¶ß1
+u
+java:S3776«"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ïíßˆşÿÿÿÿ8Ş£÷¶ß1
+B
+java:S1659Ë"Declare "B" on a separate line.(úßâşÿÿÿÿ8â£÷¶ß1
+H
+java:S1197Ô"*Move the array designators [] to the type.(ú‰§Ñ8â£÷¶ß1
