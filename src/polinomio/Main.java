@@ -33,7 +33,8 @@ public class Main {
             System.out.println("7. Dar valor a 'x'");
             System.out.println("8. Sumar");
             System.out.println("9. Multiplicar");
-            System.out.println("10. Salir");
+            System.out.println("10. Forma 2 a forma 1");
+            System.out.println("11. Salir");
             logger.info("Ingrese una opcion: ");
             opcion = scanner.nextInt();
             switch (opcion) {
@@ -106,9 +107,11 @@ public class Main {
                     if (opcion == 1){
                         poli.reconstruir();
                     }
-                    /*else if (opcion == 2){
-                        Poli2.reconstruir();
-                    }*/
+                    else if (opcion == 2){
+
+                        String polinomio = poli2.reconstruir();
+                        System.out.println(polinomio);
+                    }
                     else if (opcion == 3){
                         poli3.Reconstruir();
                     }
@@ -187,12 +190,16 @@ public class Main {
                     break;
 
                 case 10:
+                    poli3.sumaFormas(poli2);
+                    break;
+                case 11:
                     logger.info("Saliendo...");
                     break;
                 default:
                     logger.info("Opcion no valida");
+
             }
-        } while (opcion != 10);
+        } while (opcion != 11);
     }
     public static int grado (String vector[])
     {

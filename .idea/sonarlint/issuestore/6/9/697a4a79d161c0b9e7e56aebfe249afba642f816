@@ -1,61 +1,70 @@
 
 w
-java:S1192x"ZDefine a constant instead of duplicating this literal "Ingrese el valor de 'x': " 3 times.(õÁ¢­8µÛ—·ß1
+java:S1192{"ZDefine a constant instead of duplicating this literal "Ingrese el valor de 'x': " 3 times.(õÁ¢­8ó½ÛÏß1
 ƒ
-java:S1192§"eDefine a constant instead of duplicating this literal "Ingrese el polinomio a multiplicar: " 3 times.(àåÿˆ8µÛ—·ß1
+java:S1192ª"eDefine a constant instead of duplicating this literal "Ingrese el polinomio a multiplicar: " 3 times.(àåÿˆ8ó½ÛÏß1
 j
-java:S1192<"MDefine a constant instead of duplicating this literal "3. Forma 3 
-" 6 times.(´ü÷Ù8µÛ—·ß1
+java:S1192="MDefine a constant instead of duplicating this literal "3. Forma 3 
+" 6 times.(´ü÷Ù8ô½ÛÏß1
 j
-java:S1192<"MDefine a constant instead of duplicating this literal "2. Forma 2 
-" 6 times.(´ü÷Ù8µÛ—·ß1
+java:S1192="MDefine a constant instead of duplicating this literal "2. Forma 2 
+" 6 times.(´ü÷Ù8ô½ÛÏß1
 j
-java:S1192<"MDefine a constant instead of duplicating this literal "1. Forma 1 
-" 6 times.(´ü÷Ù8µÛ—·ß1
-s	java:S117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡§ôıÿÿÿÿÿ8µÛ—·ß1
-n	java:S117•"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î˜Õÿ8µÛ—·ß1
-n	java:S117œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÁÍŠ8½Û—·ß1
-n	java:S117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÅ8½Û—·ß1
-n	java:S117°"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ½±Ì8½Û—·ß1
-s	java:S117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëšÆØûÿÿÿÿ8½Û—·ß1
+java:S1192="MDefine a constant instead of duplicating this literal "1. Forma 1 
+" 6 times.(´ü÷Ù8ô½ÛÏß1
+R
+java:S1066–"/Merge this if statement with the enclosing one.(Í–ù³ıÿÿÿÿ8ô½ÛÏß1
+R
+java:S1066Ÿ"/Merge this if statement with the enclosing one.(ÊÔÂïşÿÿÿÿ8õ½ÛÏß1
+s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡§ôıÿÿÿÿÿ8õ½ÛÏß1
+n	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î˜Õÿ8õ½ÛÏß1
+n	java:S117Ÿ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÁÍŠ8õ½ÛÏß1
+n	java:S117¬"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÅ8õ½ÛÏß1
+n	java:S117³"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ½±Ì8õ½ÛÏß1
+s	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëšÆØûÿÿÿÿ8õ½ÛÏß1
 :
-java:S1643å"Use a StringBuilder instead.(îˆşí8½Û—·ß1
+java:S1643ì"Use a StringBuilder instead.(îˆşí8ö½ÛÏß1
 :
-java:S1643ê"Use a StringBuilder instead.(îˆşí8½Û—·ß1
+java:S1643ñ"Use a StringBuilder instead.(îˆşí8ö½ÛÏß1
 ?
-java:S1643ñ"Use a StringBuilder instead.(üš”øÿÿÿÿ8½Û—·ß1
+java:S1643ø"Use a StringBuilder instead.(üš”øÿÿÿÿ8ö½ÛÏß1
 ?
-java:S1643ö"Use a StringBuilder instead.(üš”øÿÿÿÿ8½Û—·ß1
+java:S1643ı"Use a StringBuilder instead.(üš”øÿÿÿÿ8ö½ÛÏß1
+Z
+java:S4973„"<Strings and Boxed types should be compared using "equals()".(¹Ç‹­8ú½ÛÏß1
+_
+java:S4973–"<Strings and Boxed types should be compared using "equals()".(Í–ù³ıÿÿÿÿ8ú½ÛÏß1
+_
+java:S4973Ÿ"<Strings and Boxed types should be compared using "equals()".(ÊÔÂïşÿÿÿÿ8û½ÛÏß1
 o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(Çµí‘8Ó¿¶ß1
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(Çµí‘8¯ÁÛÏß1
 O
-java:S6126<"2Replace this String concatenation with Text block.(´ü÷Ù8²Ş—·ß1
-]	java:S125C"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8²Ş—·ß1
+java:S6126="2Replace this String concatenation with Text block.(´ü÷Ù8½ÁÛÏß1
+]	java:S125D"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8¾ÁÛÏß1
 O
-java:S6126T"2Replace this String concatenation with Text block.(†êó8³Ş—·ß1
+java:S6126U"2Replace this String concatenation with Text block.(†êó8ÀÁÛÏß1
 O
-java:S6126h"2Replace this String concatenation with Text block.(ö³¡æ8³Ş—·ß1
-]	java:S125m"<This block of commented-out lines of code should be removed.(Ôß¦Õùÿÿÿÿ8³Ş—·ß1
+java:S6126i"2Replace this String concatenation with Text block.(ö³¡æ8ÂÁÛÏß1
 O
-java:S6126u"2Replace this String concatenation with Text block.(çëî8³Ş—·ß1
+java:S6126x"2Replace this String concatenation with Text block.(çëî8ÃÁÛÏß1
 P
-java:S6126ˆ"2Replace this String concatenation with Text block.(ÄúÖê8³Ş—·ß1
+java:S6126‹"2Replace this String concatenation with Text block.(ÄúÖê8ÄÁÛÏß1
 P
-java:S6126¤"2Replace this String concatenation with Text block.(»ÏÓÀ8³Ş—·ß1
+java:S6126§"2Replace this String concatenation with Text block.(»ÏÓÀ8ÊÁÛÏß1
 M
-java:S1197Å"*Move the array designators [] to the type.(Şç±œûÿÿÿÿ8öÌ·ß1
+java:S1197Ì"*Move the array designators [] to the type.(Şç±œûÿÿÿÿ8ÓÁÛÏß1
 p
-java:S3776Ğ"RRefactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.(ßáŠø8¾Ş—·ß1
-^	java:S125Ö"<This block of commented-out lines of code should be removed.(æÃ¼Äÿÿÿÿÿ8¾Ş—·ß1
+java:S3776×"RRefactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.(ßáŠø8ÕÁÛÏß1
+^	java:S125İ"<This block of commented-out lines of code should be removed.(æÃ¼Äÿÿÿÿÿ8ØÁÛÏß1
 M
-java:S1197Ü"*Move the array designators [] to the type.(êñ‘ûÿÿÿÿ8¾Ş—·ß1
+java:S1197ã"*Move the array designators [] to the type.(êñ‘ûÿÿÿÿ8ÚÁÛÏß1
 M
-java:S1197İ"*Move the array designators [] to the type.(³¢²úÿÿÿÿ8¾Ş—·ß1
+java:S1197ä"*Move the array designators [] to the type.(³¢²úÿÿÿÿ8ÛÁÛÏß1
 D
-java:S1110˜"!Remove these useless parentheses.(ÊÔÂïşÿÿÿÿ8¾Ş—·ß1
+java:S1110Ÿ"!Remove these useless parentheses.(ÊÔÂïşÿÿÿÿ8åÁÛÏß1
 H
-java:S1197ª"*Move the array designators [] to the type.(Áè§‹8ÇŞ—·ß1
+java:S1197±"*Move the array designators [] to the type.(Áè§‹8æÁÛÏß1
 ä
-java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 165 to 64, Complexity from 28 to 14, Nesting Level from 3 to 2, Number of Variables from 29 to 6.(Çµí‘8ó¿¶ß1
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 173 to 64, Complexity from 30 to 14, Nesting Level from 3 to 2, Number of Variables from 30 to 6.(Çµí‘8èÁÛÏß1
 ã
-java:S6541Ğ"ÄA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 78 to 64, Complexity from 20 to 14, Nesting Level from 4 to 2, Number of Variables from 8 to 6.(ßáŠø8ÇŞ—·ß1
+java:S6541×"ÄA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 78 to 64, Complexity from 20 to 14, Nesting Level from 4 to 2, Number of Variables from 8 to 6.(ßáŠø8èÁÛÏß1

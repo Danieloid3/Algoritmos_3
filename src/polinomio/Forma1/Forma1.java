@@ -1,6 +1,8 @@
 package polinomio.Forma1;
 
 
+import polinomio.Forma2.Forma2;
+
 public class Forma1 {
     //Atributos
     public int datosUtiles;
@@ -249,5 +251,7 @@ public class Forma1 {
             System.out.println(C[i]);
         }
     }
+
+
 
 }

@@ -1,7 +1,21 @@
 
-m	java:S117q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ¤·¶8Î±•·ß1
-n	java:S117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÙÍž8Î±•·ß1
+m	java:S117s"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ¤·¶8‰ŒºÏß1
+n	java:S117«"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÙÍž8ŠŒºÏß1
+9
+java:S1643Ë"Use a StringBuilder instead.(Ùˆ»F8¿¾ÔÏß1
+o
+java:S3776L"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ÈúÉè8Á’ºÏß1
+`
+java:S1854Q">Remove this useless assignment to local variable "exponenteB".(œïÄ¬ýÿÿÿÿ8Â’ºÏß1
+a
+java:S1854P"?Remove this useless assignment to local variable "expontenteA".(¿äŠëùÿÿÿÿ8Â’ºÏß1
+G
+java:S1481O"*Remove this unused "mayor" local variable.(¾ûñ 8Ã’ºÏß1
+R
+java:S1481P"0Remove this unused "expontenteA" local variable.(¿äŠëùÿÿÿÿ8Ä’ºÏß1
+Q
+java:S1481Q"/Remove this unused "exponenteB" local variable.(œïÄ¬ýÿÿÿÿ8Ä’ºÏß1
 D
-java:S1481Ç"&Remove this unused "j" local variable.(ä€€ÿ8¥µ•·ß1
+java:S1481Þ"&Remove this unused "j" local variable.(ä€€ÿ8Ø’ºÏß1
 D
-java:S1481é"&Remove this unused "j" local variable.(ä€€ÿ8¥µ•·ß1
+java:S1481Œ"&Remove this unused "j" local variable.(ä€€ÿ8Û’ºÏß1

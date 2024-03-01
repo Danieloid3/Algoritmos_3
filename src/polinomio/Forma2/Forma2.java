@@ -75,38 +75,40 @@ public class Forma2 {
     }
     public void eliminar2(int exponente){
         int i = 2;
-        int j = 3;
+        int j = 2;
         int mayor = 0;
         int expontenteA = terminos - i;
         int exponenteB = terminos - j;
-        if (vector[0] == exponente) {
-            vector[0] = Integer.parseInt("0");
-            vector[1] = Integer.parseInt("0");
-        }
+
         while (i < terminos) {
             if (vector[i] == exponente) {
                 vector[i] = Integer.parseInt("0");
-                vector[i + 1] = Integer.parseInt("0");
-                if (expontenteA > exponenteB) {
-                    mayor = expontenteA;
-                } else {
-                    mayor = exponenteB;
+                vector[i - 1] = Integer.parseInt("0");
+
+                for (i=1 ; i <= terminos; i+=2) {
+                    if (vector[terminos] == 0 && vector[terminos-1] == 0){
+                        break;
+                    }else if ((vector[i] == 0) && (vector[i+1] == 0)){
+                        vector[i] = vector[i+2];
+                        vector[i+1] = vector[i+3];
+                        vector[i+2] = 0;
+                        vector[i+3] = 0;
+                    }
                 }
-                for (int k = i; k < mayor; k++) {
-                    vector[k] = vector[k + 2];
-                    vector[k + 1] = vector[k + 3];
-                }
-                vector[0] = vector[0] - 1;
+                vector[0] = (terminos - 2)/2;
                 terminos = terminos - 2;
             }
+
             i += 2;
-            j += 2;
-            expontenteA = terminos - i;
-            exponenteB = terminos - j;
         }
         System.out.println("--VECTOR EN FORMA 2--");
-        for (i = 0; i < vector.length; i++) {
+        i=0;
+        while (i < vector.length) {
             System.out.println(vector[i]);
+            if (vector[i]==0 && vector[i+1]==0) {
+                break;
+            }
+            i++;
         }
     }
     //Sumar dos polinomios de forma 2
@@ -193,30 +195,17 @@ public class Forma2 {
             i++;
         }
     }
-    //reconstruir polinomio de forma 2
-    public void reconstruir(){
+    //reconstruir polinomio de forma 2 a string
+    public String reconstruir(){
         int i = 1;
-        int j = 1;
-        int k = 1;
-        int[] vectorC = new int[terminos + 1];
-        int terminosC = 0;
+        String polinomio = "";
         for (i = 1; i <= terminos; i += 2) {
-            vectorC[k] = vector[i];
-            vectorC[k + 1] = vector[i + 1];
-            k += 2;
-            terminosC++;
+            polinomio += vector[i] + "x^" + vector[i + 1] + " + ";
         }
-        vectorC[0] = terminosC;
-        System.out.println("--RECONSTRUCCION FORMA 2--");
-        i = 0;
-        while (i < vectorC.length) {
-            System.out.println(vectorC[i]);
-            if (vectorC[i]==0 && vectorC[i+1]==0) {
-                break;
-            }
-            i++;
-        }
+        polinomio = polinomio.substring(0, polinomio.length() - 3);
+        return polinomio;
     }
+
     //Evaluar polinomio de forma 2
     public void evaluar(int x){
         int i = 1;
@@ -264,6 +253,33 @@ public class Forma2 {
         }
         vectorC[0] = terminosC;
         System.out.println("--INSERCION FORMA 2--");
+        i = 0;
+        while (i < vectorC.length) {
+            System.out.println(vectorC[i]);
+            if (vectorC[i]==0 && vectorC[i+1]==0) {
+                break;
+            }
+            i++;
+        }
+    }
+    //metodo para pasar de forma 2 a forma 1
+    public void forma2Aforma1(){
+        int i = 1;
+        int j = 1;
+        int k = 1;
+        int[] vectorC = new int[terminos + 1];
+        int grado = 0;
+        for (i = 2; i <= terminos; i += 2) {
+            if (vector[i] > grado) {
+                grado = vector[i];
+            }
+        }
+        vectorC[0] = grado;
+        for (i = 1; i <= terminos; i += 2) {
+            vectorC[k] = vector[i];
+            k += 1;
+        }
+        System.out.println("--FORMA 2 A FORMA 1--");
         i = 0;
         while (i < vectorC.length) {
             System.out.println(vectorC[i]);
